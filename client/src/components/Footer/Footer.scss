@@ -1,0 +1,22 @@
+.footer-wrapper {
+  grid-area: footer;
+  border: 1px solid blue;
+  width: 100%;
+}
+
+
+.footer {
+  background-color: #f5fbf6;
+  height: 100%;
+  width: 100%;
+
+  color: #73c583;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+
+// display: flex;
+// justify-content: space-between;
+// align-items: center;

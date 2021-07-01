@@ -1,0 +1,12 @@
+.content-wrapper {
+  grid-area: content;
+  border: 1px solid purple;
+
+  background-position: center;
+  z-index: -1;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+
+  padding: 20px 20px;
+
+}
