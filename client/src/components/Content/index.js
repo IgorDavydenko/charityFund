@@ -14,12 +14,15 @@ import backgroundImg from "../../assets/background.jpg";
 const Content = () => {
   
   return (
-    <div className="content-wrapper"
-          style={{ backgroundImage: `url(${backgroundImg})` }}>
+    <div className="content-wrapper" >
+      {/* <div className="content__background"
+            style={{ backgroundImage: `url(${backgroundImg})` }}/> */}
       
+      <img className="content__background" src="/img/background.jpg"/>
+
       <Switch>
-          <Route exact path='/team' component={Team}/>
-        </Switch>
+        <Route exact path='/team' component={Team}/>
+      </Switch>
 
     </div>
   )

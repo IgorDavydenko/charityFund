@@ -9,7 +9,7 @@ const Header = () => {
     <div className="header-wrapper">
       <header className="header">
         <div className="header__logo">
-          <a href="#">
+          <a href="/">
             <img src="/img/logo.jpg" alt=""/>
           </a>
         </div>
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="contacts">
           <div className="contacts__phone">
           {/* <a href="tel:+7000000000">1-562-867-5309</a> */}
-            +7 (930) 401-67-57
+            +7 <span className="item_font-red">(930)</span> 401-67-57
           </div>
           <div className="contacts__email">
             otserdcakcerdcy36@mail.ru

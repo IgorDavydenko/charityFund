@@ -9,6 +9,8 @@ const Team = () => {
   return (
     <div className="team">
       <Card />
+      <Card />
+      <Card />
     </div>
   )
 }
