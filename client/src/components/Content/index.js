@@ -4,11 +4,11 @@ import {
   Route
 } from 'react-router-dom'
 
+import Documents from '../Documents/index.js';
 import Team from '../Team/index.js'
 
 import './Content.scss'
-import backgroundImg from "../../assets/background.jpg";
-
+// import backgroundImg from "../../assets/background.jpg";
 
 
 const Content = () => {
@@ -22,6 +22,7 @@ const Content = () => {
 
       <Switch>
         <Route exact path='/team' component={Team}/>
+        <Route exact path='/documents' component={Documents}/>
       </Switch>
 
     </div>
