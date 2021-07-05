@@ -7,13 +7,13 @@ import './Card.scss'
 const Card = (props) => {
 
   return (
-    <div className="card">
-      <div className="card__image">
+    <div className="documents__card">
+      <div className="documents__card-image">
         <a href={props.path} target="_blank">
           <img src={props.preview}/>
         </a>
       </div>
-      <div className="card_title">
+      <div className="documents__card-title">
         {props.title}
       </div>
     </div>
