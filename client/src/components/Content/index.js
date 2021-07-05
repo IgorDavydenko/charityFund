@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 import Documents from '../Documents/index.js';
+import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
 
 import './Content.scss'
@@ -23,6 +24,7 @@ const Content = () => {
       <Switch>
         <Route exact path='/team' component={Team}/>
         <Route exact path='/documents' component={Documents}/>
+        <Route exact path='/requisites' component={Requisites}/>
       </Switch>
 
     </div>
