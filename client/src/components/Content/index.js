@@ -9,6 +9,7 @@ import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
 
 import './Content.scss'
+import HomePage from '../HomePage/index.js';
 // import backgroundImg from "../../assets/background.jpg";
 
 
@@ -22,9 +23,10 @@ const Content = () => {
       <img className="content__background" src="/img/background.jpg"/>
 
       <Switch>
-        <Route exact path='/team' component={Team}/>
-        <Route exact path='/documents' component={Documents}/>
-        <Route exact path='/requisites' component={Requisites}/>
+        <Route exact path='/' component={ HomePage }/>
+        <Route exact path='/team' component={ Team }/>
+        <Route exact path='/documents' component={ Documents }/>
+        <Route exact path='/requisites' component={ Requisites }/>
       </Switch>
 
     </div>

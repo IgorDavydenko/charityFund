@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import './Header.scss' 
 
 import Navigation from './Navigation/index.js'
@@ -9,9 +11,8 @@ const Header = () => {
     <div className="header-wrapper">
       <header className="header">
         <div className="header__logo">
-          <a href="/">
-            <img src="/img/logo.jpg" alt=""/>
-          </a>
+          <NavLink to="/">
+            <img src="/img/logo.jpg" alt=""/></NavLink>
         </div>
         <div className="fund">
           <div className="fund-status">
