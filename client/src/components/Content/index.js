@@ -20,8 +20,8 @@ const Content = () => {
       {/* <div className="content__background"
             style={{ backgroundImage: `url(${backgroundImg})` }}/> */}
       
-      <img className="content__background" src="/img/background.jpg"/>
-
+      {/* <img className="content__background" src="/img/background.jpg"/> */}
+      <div className=".content__background"></div>
       <Switch>
         <Route exact path='/' component={ HomePage }/>
         <Route exact path='/team' component={ Team }/>
