@@ -1,41 +1,38 @@
 import React from 'react'
 import './Requisites.scss'
 
-import { YMaps, Map, Placemark } from "react-yandex-maps";
-
 const Requisites = () => {
-
-  const mapData = {
-    center: [51.700592, 39.149784],
-    zoom: 17,
-  };
-  
-  const coordinates = [
-    [51.700592, 39.149784]
-  ];
 
   return (
     <div className="requisites-wrapper">
-      <div className="contacts">
-        <div className="requisites__item requisites__phone">
-          +7 <span className="item_font-red">(930)</span> 401-67-57
-        </div>
-        <div className="requisites__item requisites__email">
-          otserdcakcerdcy36@mail.ru
-        </div>
-        <div className="requisites__item requisites__adress">
-          г. Воронеж, ул. Хользунова 107 Е
-        </div>
+      <div className="requisites__item requisites__name">
+        АНО ПСД «От сердца к сердцу»
       </div>
-      <div className="requisites__item requisites-wrapper__map">
-        <YMaps>
-          <Map width='800px' height='400px' defaultState={mapData}>
-            {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
-          </Map>
-        </YMaps>
+      <div className="requisites__item requisites__adress">
+        Юридический адрес: г. Воронеж, ул. Владимира Невского, д.25/5, помещ.3<br/>
+        Фактический адрес: г. Воронеж, ул. Хользунова 107 Е<br/>
+      </div>
+      <div className="requisites__item requisites__adress">
+        ИНН/ КПП 3662294982/366201001<br/>
+        ОГРН 1213600020237<br/>
+        Р/С 40703 810 8 0206 0000022 АО «АЛЬФА-БАНК<br/>
+        БИК 044525593<br/>
+        К/С 30101 810 2 0000 0000593 e-mail: Otserdca36@mail.ru<br/>
+      </div>
+      <div className="requisites__item requisites__phone">
+        телефон: 89304016757
+      </div>
+      <div className="requisites__item requisites__card">
+        Карта сбербанка: 2202 2004 7999 9375 Валентина Андреевна С
       </div>
     </div>
   )
 }
 
 export default Requisites
+
+/*
+
+
+
+*/
