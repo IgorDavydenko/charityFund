@@ -24,8 +24,9 @@ const Header = () => {
         </div>
         <div className="contacts">
           <div className="contacts__phone">
-           {/* <a href="tel:+7000000000">1-562-867-5309</a> */}
+           <a href="tel:+79304016757">
             +7 <span className="item_font-red">(930)</span> 401-67-57
+           </a>
           </div>
           <div className="contacts__email">
             otserdcakcerdcy36@mail.ru
