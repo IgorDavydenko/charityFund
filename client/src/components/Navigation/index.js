@@ -1,13 +1,24 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { Navdivnk, NavLink } from 'react-router-dom'
 
 import './Navigation.scss'
 
 const Navigation = () => {
 
+  const [showNavigation, setShowNavigation] = useState(false)
+
+  const handleShowNavigation = () => {
+    setShowNavigation(!showNavigation)
+  }
+
   return (
-    <nav className='navigation-wrapper'>
+    <nav className={`navigation-wrapper ${showNavigation? 'navigation_show':''}`}>
       <div className='navigation'>
+        <div className='navigation__item navigation__about'>
+          <NavLink 
+            to="/about"
+            activeClassName="active">О нас</NavLink>
+        </div>
         <div className='navigation__item'>
           <NavLink 
             to="/projects"
@@ -44,6 +55,10 @@ const Navigation = () => {
               activeClassName="active">Фотоотчёты</NavLink>
         </div>
       </div>
+      <button className="navigation__burger"
+            onClick={ handleShowNavigation }>
+        <span className="burger-bar"></span>
+      </button>
     </nav>
   )
 }
