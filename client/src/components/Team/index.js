@@ -8,10 +8,14 @@ const Team = () => {
 
   return (
     <div className="team">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card
+        avatarPath='/img/team/SerezkinaVA.jpg'
+        name="Серёжкина Валентина Андреевна"
+        role="Директор" />
+      <Card
+        avatarPath='/img/team/VelozemcevaOV.jpg'
+        name="Везломцева Ольга Валерьевна"
+        role="Менеджер" />
     </div>
   )
 }
