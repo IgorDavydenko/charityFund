@@ -52,8 +52,11 @@
 
 @media screen and (max-width: 767px) {
   .navigation-wrapper {
+    height: 80px;
+    background-color: #fce5b0;
     justify-content: flex-end;
     box-shadow: none;
+    z-index: 5;
   }
 
   .navigation {
