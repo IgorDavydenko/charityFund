@@ -16,7 +16,7 @@ const Navigation = () => {
       <div className='navigation'>
         <div className='navigation__item navigation__about'>
           <NavLink 
-            to="/about"
+            to="/"
             activeClassName="active">О нас</NavLink>
         </div>
         <div className='navigation__item'>

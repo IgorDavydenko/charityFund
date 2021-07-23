@@ -17,10 +17,11 @@ const Requisites = () => {
         ОГРН 1213600020237<br/>
         Р/С 40703 810 8 0206 0000022 АО «АЛЬФА-БАНК<br/>
         БИК 044525593<br/>
-        К/С 30101 810 2 0000 0000593 e-mail: Otserdca36@mail.ru<br/>
+        К/С 30101 810 2 0000 0000593<br/>
+        e-mail: Otserdca36@mail.ru<br/>
       </div>
       <div className="requisites__item requisites__phone">
-        телефон: 89304016757
+        телефон: <a className="item_font-red" href="tel:+79304016757">+7 (930) 401-67-57</a>
       </div>
       <div className="requisites__item requisites__card">
         Карта сбербанка: 2202 2004 7999 9375 Валентина Андреевна С
