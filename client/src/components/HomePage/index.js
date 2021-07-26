@@ -4,7 +4,7 @@ import './HomePage.scss';
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 const HomePage = () => {
-
+  
   const mapData = {
     center: [51.700592, 39.149784],
     zoom: 17,
@@ -34,7 +34,7 @@ const HomePage = () => {
         </div>
         <div className="home-page__map">
           <YMaps>
-            <Map width='800px' height='400px' defaultState={mapData}>
+            <Map height='300px' defaultState={mapData}>
               {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
             </Map>
           </YMaps>
