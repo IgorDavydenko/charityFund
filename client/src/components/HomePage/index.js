@@ -34,7 +34,7 @@ const HomePage = () => {
         </div>
         <div className="home-page__map">
           <YMaps>
-            <Map height='300px' defaultState={mapData}>
+            <Map width='300px' height='300px' defaultState={mapData}>
               {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
             </Map>
           </YMaps>
