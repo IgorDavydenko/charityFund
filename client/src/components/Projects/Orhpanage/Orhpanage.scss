@@ -1,0 +1,76 @@
+.orhpanage-wrapper {
+  width: 100%;
+}
+
+.orhpanage {
+    line-height: 1.5;
+
+    img {
+        max-width: 100%;
+    }
+
+    .orhpanage__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .orhpanage__description {
+        margin-bottom: 1rem;
+    }
+
+    .orhpanage__slogan {
+        display: block;
+        margin: 1rem;
+
+        font-size: 1.25rem;
+        
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .img__secondary {
+        display: flex;
+        gap: 0.5rem;
+
+        .secondary__item {
+            flex: 1;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .orhpanage {
+        display: grid;
+        grid-template-columns:
+            repeat(4, minmax(10rem, 30rem));
+        gap: 2em;
+
+        .orhpanage__title,
+        .orhpanage__content {
+            grid-column: 1 / 3;
+        }
+
+        .orhpanage__img {
+            grid-row: 1 / 3;
+            grid-column: 3 / 5;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            // grid-template-rows: 
+            //     minmax(1em, 1fr)
+            //     repeat(2, minmax(10rem, 30rem))
+            //     minmax(1em, 1fr);
+
+            .img__primary,
+            .img__secondary {
+                grid-column: 1 / 3;
+            }
+
+            .img__primary {
+                align-self: end;
+            }
+        }
+    }
+}
