@@ -57,6 +57,7 @@
     justify-content: flex-end;
     box-shadow: none;
     z-index: 5;
+    position: relative;
   }
 
   .navigation {
@@ -71,8 +72,13 @@
     visibility: hidden;
     background-color: #FDEDC9;
     transition: all .5s ease-out;
+    overflow: auto;
 
     .navigation__item {
+      &.navigation__about {
+        display: block;
+      }
+
       a {
         display: block;
         margin: 0;
@@ -96,15 +102,14 @@
       }
     }
 
-    .navigation__about {
-      display: block;
-    }
+
   }
 
   .navigation__burger {
     display: block;
     position: relative;
     outline: none;
+
     &:hover {
       cursor: pointer;
     }
