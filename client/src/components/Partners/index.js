@@ -30,6 +30,13 @@ const Partners = () => {
           {
             url: "https://smena68.ru/",
           }} />
+      <Card
+        logoPath='/img/sponsors/vkus_chernozemya.png'
+        name="Вкус Черноземья"
+        links={
+          {
+            url: "http://vkusvrn.ru/",
+          }} />
     </div>
   )
 }

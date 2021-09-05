@@ -1,4 +1,4 @@
-.card {
+.partners__card {
   flex: 0 0 250px;
   height: 300px;
 
@@ -19,7 +19,7 @@
     box-shadow: 2px 2px 26px 0px rgba(244, 0, 34, 0.3);
   }
 
-  &__image {
+  .partner__image {
     height: 250px;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
     }
   }
 
-  &_partner-name {
+  .partner__name {
     flex-grow: 1;
     margin: 5px;
     padding: 0px 10px;
@@ -40,14 +40,14 @@
     font-weight: bolder;
   }
 
-  .partner-links {
+  .partner__links {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     
-    &__item {
+    .links__item {
       margin: 0 5px;
     }
     

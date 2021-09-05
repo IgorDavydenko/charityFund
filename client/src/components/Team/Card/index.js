@@ -5,7 +5,7 @@ import './Card.scss'
 const Card = (props) => {
 
   return (
-    <div className="card">
+    <div className="team__card">
       <div className="card__image">
         <img src={props.avatarPath}/>
       </div>
