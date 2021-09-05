@@ -8,8 +8,8 @@ const Gratitude = (props) => {
   return (
     <div className="gratitudes">
       <Card 
-          preview="/gratitudes/zemplyansk_school.jpeg"
-          path="/gratitudes/zemplyansk_school.jpeg"
+          preview="/gratitudes/zemplyansk_school.jpg"
+          path="/gratitudes/zemplyansk_school.jpg"
           title="Землянская школа-интернат"/>
       {/* <a href="/files/Licence.pdf" target="_blank">licence</a> */}
     </div>
