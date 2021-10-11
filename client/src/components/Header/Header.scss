@@ -76,6 +76,13 @@
   }
 }
 
+svg {
+  width: 20px;
+  height: 20px;
+  fill: #F40022;
+  transition: transform 1s;
+}
+
 @media (max-width: 420px) {
   .fund__status {
     display: none;

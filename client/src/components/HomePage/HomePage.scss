@@ -26,6 +26,13 @@
         font-weight: bolder;
         text-align: center;
         vertical-align: middle;
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 10px;
+            fill: red;
+        }
     }
 
     .home-page__map {
