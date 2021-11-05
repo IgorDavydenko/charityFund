@@ -43,13 +43,6 @@ const HomePage = () => {
             <div>г. Воронеж, ул. Хользунова 107 Е</div>
           </div>
         </div>
-        <div className="home-page__map">
-          <YMaps>
-            <Map width='300px' height='300px' defaultState={mapData}>
-              {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
-            </Map>
-          </YMaps>
-        </div>
     </div>
   )
 }

@@ -5,10 +5,8 @@
 }
 
 body {
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    font-size: 20px;
+    font-family: 'Lora', serif;
 }
 
 code {
@@ -16,53 +14,24 @@ code {
         monospace;
 }
 
-.charityApp {
-    position: relative;
-    height: 100vh;
-    min-width: 320px;
-    max-width: 980px;
-    margin: 0 auto;
-    // border: 1px solid red;
-    position: relative;
-
-    display: flex;
-    // align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    .content-wrapper {
-        flex: 1;
-        overflow: auto;
-    }
-
-    .content__background {
-        // background-image: url(../../assets/background.jpg);
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 0.6;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        object-fit: cover;
-    
-      }
-}
-
 a {
+    display: block;
     text-decoration: none;
     cursor: pointer;
     color: black;
 }
 
-.item_font-red {
-    color: #F40022;
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
+
+.item_font-red {
+    color: #BF1932;
+}
+
+
 
 // .banner {
 //     position: relative;

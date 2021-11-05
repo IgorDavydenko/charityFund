@@ -2,7 +2,8 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from 'react-router-dom'
 import './App.scss';
 
@@ -12,10 +13,10 @@ import Footer from './Footer/index.js'
 
 function App() {
   return (
-    <div>
+    <div className="charityApp">
       <Router>
-        <div className="charityApp">
-          <img className="content__background" src="/img/background.jpg"/>
+        <div>
+          {/* <img className="content__background" src="/img/background.jpg"/> */}
           <Header />
           <Content />
           <Footer />

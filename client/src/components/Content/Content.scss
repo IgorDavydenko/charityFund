@@ -1,15 +1,14 @@
 .content-wrapper {
-  
-  position: relative;
-  padding: 1.5rem;
 
-  &::-webkit-scrollbar {
-      width: 0.2rem;
-  }
-  &::-webkit-scrollbar-thumb {
-      height: 5px;
-      background: linear-gradient(to top, transparent, #F40022);
-      border-radius: 6px;
+padding: 100px 0 0 0;
+
+  .content__text {
+    font-size: 18px;
+    line-height: 25px;
+
+    p {
+        margin: 0 0 20px 0;
+    }
   }
 
 }

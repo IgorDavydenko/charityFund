@@ -21,12 +21,12 @@ const Navigation = () => {
         </div>
         <div className='navigation__item'>
           <NavLink 
-            to="/projects"
-            activeClassName="active">Проекты</NavLink>
+            to="/"
+            activeClassName="active"></NavLink>
         </div>
         <div className='navigation__item'>
           <NavLink 
-              to="/team"
+              to="/"
               activeClassName="active">Команда</NavLink>
         </div>
         <div className='navigation__item'>
