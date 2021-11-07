@@ -5,13 +5,13 @@
 }
 
 body {
+    height: 100%;
     font-size: 20px;
     font-family: 'Lora', serif;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 a {
@@ -30,6 +30,13 @@ a {
 .item_font-red {
     color: #BF1932;
 }
+
+.charityApp-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
