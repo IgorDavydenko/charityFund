@@ -28,7 +28,7 @@ const HomePage = () => {
               backgroundPosition: '50% 50%',
               backgroundSize: '100% auto',
           }}></div>
-          <div className="homepage__description">автономная некоммерческая организация помощи семьи и детям</div>
+          <div className="homepage__description">автономная некоммерческая организация помощи семье и детям</div>
           <h2 className="homepage__title">От сердца к серцу</h2>
           <div className="homepage__social">
             <div className="social__item phone">
