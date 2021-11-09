@@ -4,8 +4,6 @@
 }
 
 .footer {
-  height: 100%;
-  width: 100%;
   
   padding: 0.5rem 0;
   text-align: center;
@@ -13,4 +11,27 @@
   font-style: normal;
   font-weight: bold;
 
+  .footer__contacts {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.contacts__item {
+  display: flex;
+  margin: 5px 0;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+
+  svg {
+      margin-right: 10px;
+      fill: #BF1932;
+  }
 }
