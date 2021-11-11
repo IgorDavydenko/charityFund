@@ -13,6 +13,7 @@ import Projects from '../Projects/index.js';
 import Gratitude from '../Gratitude/index.js';
 import Photos from '../Photos/index.js';
 import ZemlyanskPhotos from '../Photos/ZemlyanskPhotos/index.js'
+import BobrovPhotos from '../Photos/BobrovPhotos/index.js'
 
 import './Content.scss'
 
@@ -30,7 +31,7 @@ const Content = () => {
         <Route exact path='/gratitude' component={ Gratitude }/>
         <Route exact path='/photos' component={ Photos }/>
         <Route exact path='/photos/zemlyansk' component={ ZemlyanskPhotos }/>
-
+        <Route exact path='/photos/bobrov' component={ BobrovPhotos }/>
       </Switch> 
     </div>
   )

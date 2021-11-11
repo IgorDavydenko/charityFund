@@ -1,10 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { SRLWrapper } from "simple-react-lightbox";
-
 
 import './Photos.scss'
-import ZemlyanskPhotos from './ZemlyanskPhotos';
 
 const Photos = () => {
 
@@ -14,7 +11,7 @@ const Photos = () => {
             className="photos__item"
             to="/photos/zemlyansk">
 
-        <div className="photos__preview"
+          <div className="photos__preview"
             style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/zemlyansk_09.jpg'})`,
               backgroundRepeat: 'no-repeat',
@@ -23,6 +20,21 @@ const Photos = () => {
           }}></div>
           <div className="photos__name">
             КОУ ВО Землянская школа-интернат для обучающихся с ограниченными возможностями для здоровья
+          </div>
+        </NavLink>
+        <NavLink 
+            className="photos__item"
+            to="/photos/bobrov">
+
+          <div className="photos__preview"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/bobrov/bobrov_02.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: '100% auto',
+          }}></div>
+          <div className="photos__name">
+            КОУ ВО Бобровская специальная школа-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья
           </div>
         </NavLink>
     </div>
