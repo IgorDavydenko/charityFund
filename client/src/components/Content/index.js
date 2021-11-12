@@ -1,13 +1,16 @@
 import React from 'react'
 import {
   Switch,
-  Route
+  Route,
+  useLocation
 } from 'react-router-dom'
 
 import Documents from '../Documents/index.js';
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
 import HomePage from '../HomePage/index.js';
+import Footer from '../Footer/index.js'
+
 import Partners from '../Partners/index.js';
 import Projects from '../Projects/index.js';
 import Gratitude from '../Gratitude/index.js';
@@ -18,13 +21,18 @@ import './Content.scss'
 const Content = () => {
 
   return (
-
     <div className="content-wrapper">
       <Switch>
-        <Route exact path='/' component={HomePage} />
+        <Route exact path='/' component={ HomePage } />
+        <Route exact path='/team' component={ Team } />
+        <Route exact path='/partners' component={ Partners } />
       </Switch>
+      {
+        ( useLocation().pathname != '/') ? <Footer /> : ''
+      }
     </div>
   )
+}
 /*
 
     // <div className="content-wrapper" >
@@ -43,6 +51,6 @@ const Content = () => {
     //     </Switch>
     //     </div>
     //   </section>*/
-}
+
 
 export default Content
