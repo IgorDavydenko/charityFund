@@ -5,10 +5,26 @@ import './Header.scss'
 
 import Navigation from '../Navigation/index.js'
 
+
+const mainMenuList = [
+  {
+    name: 'О нас',
+    path: '/about'
+  },
+  {
+    name: 'Проекты',
+    path: '/projects'},
+  {
+    name: 'Партнёры',
+    path: '/partners'
+  }, 
+  {
+    name: 'События',
+    path: '/events'
+  }
+];
+
 const Header = () => {
-
-  const mainMenuList = ['О нас', 'Проекты', 'Партнёры', 'События'];
-
   return (
     <header className="header">
       <div className="container">
@@ -27,8 +43,8 @@ const Header = () => {
                   return (
                     <li>
                       <NavLink className="header__link" activeClassName="active"
-                        to="/projects">
-                          {item}</NavLink>
+                        to={item.path}>
+                          {item.name}</NavLink>
                     </li>
                   )
               })}
