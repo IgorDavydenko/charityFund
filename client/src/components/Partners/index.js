@@ -1,14 +1,30 @@
 import React from 'react'
 
 import Card from './Card/index.js'
-
 import './Partners.scss'
+
+const partnersList = [
+  {
+    name: 'Мясо есть',
+    logoPath: '/img/sponsors/myaso_est.jpg',
+    links: {
+      url: "https://www.meatisru.com",
+      instagram: "https://www.instagram.com/meatisru/"
+    }
+  }
+]
 
 const Partners = () => {
 
   return (
     <div className="partners">
-      <Card
+      <div className="partner">
+        <img className="parnter__logo" src="/img/sponsors/myaso_est.jpg" />
+        <div className="partner__name">
+          Мясо есть
+        </div>
+      </div>
+      {/* <Card
         logoPath='/img/sponsors/myaso_est.jpg'
         name="Мясо есть"
         links={
@@ -36,7 +52,7 @@ const Partners = () => {
         links={
           {
             url: "http://vkusvrn.ru/",
-          }} />
+          }} /> */}
     </div>
   )
 }

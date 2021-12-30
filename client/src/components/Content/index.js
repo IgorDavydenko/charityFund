@@ -5,12 +5,12 @@ import {
   useLocation
 } from 'react-router-dom'
 
+import CommonPage from '../CommonPage/index.js'
 import Documents from '../Documents/index.js';
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
 import HomePage from '../HomePage/index.js';
 import Footer from '../Footer/index.js'
-
 import Partners from '../Partners/index.js';
 import Projects from '../Projects/index.js';
 import Gratitude from '../Gratitude/index.js';
@@ -24,12 +24,12 @@ const Content = () => {
     <div className="content-wrapper">
       <Switch>
         <Route exact path='/' component={ HomePage } />
-        <Route exact path='/team' component={ Team } />
-        <Route exact path='/partners' component={ Partners } />
+        <Route exact path='/team' component={ CommonPage(Team) } />
+        <Route exact path='/partners' component={ CommonPage(Partners) } />
       </Switch>
-      {
+      {/* {
         ( useLocation().pathname != '/') ? <Footer /> : ''
-      }
+      } */}
     </div>
   )
 }
