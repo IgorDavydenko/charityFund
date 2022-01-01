@@ -18,8 +18,13 @@ const Partners = () => {
 
   return (
     <div className="partners">
-      <div className="partner">
-        <img className="partner__logo" src="/img/sponsors/myaso_est.jpg" />
+      <div className="partner"
+        style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/sponsors/myaso_est.jpg'})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 50%',
+          backgroundSize: 'auto 100%',
+      }}>
         <div className="partner__info">
           <div className="partner__name">
             Мясо есть
@@ -45,8 +50,13 @@ const Partners = () => {
         </div>
       </div>
 
-      <div className="partner">
-        <img className="partner__logo" src="/img/sponsors/shindvor.jpg" />
+      <div className="partner"
+        style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/sponsors/shindvor.jpg'})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 50%',
+          backgroundSize: 'auto 100%',
+      }}>
         <div className="partner__info">
           <div className="partner__name">
             Шинный двор
@@ -63,8 +73,13 @@ const Partners = () => {
         </div>
       </div>
 
-      <div className="partner">
-        <img className="partner__logo" src="/img/sponsors/smena.jpg" />
+      <div className="partner"
+        style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/sponsors/smena.jpg'})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 50%',
+          backgroundSize: 'auto 100%',
+      }}>
         <div className="partner__info">
           <div className="partner__name">
             ООО Смена
@@ -81,8 +96,13 @@ const Partners = () => {
         </div>
       </div>
 
-      <div className="partner">
-        <img className="partner__logo" src="/img/sponsors/vkus_chernozemya.png" />
+      <div className="partner"
+        style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/sponsors/vkus_chernozemya.png'})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 50%',
+          backgroundSize: '100% auto',
+      }}>
         <div className="partner__info">
           <div className="partner__name">
             Вкус Черноземья
