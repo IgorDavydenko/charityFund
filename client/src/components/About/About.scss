@@ -1,4 +1,8 @@
 .about-wrapper {
     display: flex;
     flex-direction: column;
+
+    p {
+        margin: 20px;
+    }
 }

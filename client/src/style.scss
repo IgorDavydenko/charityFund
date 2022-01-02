@@ -14,13 +14,6 @@ code {
     font-family: 'Open Sans', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-a {
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-}
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -38,6 +31,29 @@ a {
     flex-direction: column;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 36px;
+    color: #BF1932;
+}
+
+p {
+    font-size: 20px;
+}
 
 
 
