@@ -5,7 +5,7 @@ import {
   useLocation
 } from 'react-router-dom'
 
-import CommonPage from '../CommonPage/index.js'
+import CommonPage from './CommonPage.js'
 import Documents from '../Documents/index.js';
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'

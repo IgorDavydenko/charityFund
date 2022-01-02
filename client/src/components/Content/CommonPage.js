@@ -7,13 +7,16 @@ const CommonPage = (ContentComponent) => {
   class Page extends React.Component {
     render() {
       return (
-        <div className="content">
-          <ContentComponent />
+        <>
+          <div className="content">
+            <ContentComponent />
+          </div>
           <Footer />
-        </div>
+        </>
       )
     }
   }
+
   return Page
 }
 
