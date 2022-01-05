@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.scss'
 
+import Projects from '../Projects/index.js'
 import Team from '../Team/index.js'
 
 
@@ -19,7 +20,7 @@ const About = () => {
 
       <div className="about__projects">
         <h2>Проекты</h2>
-        {/* <Team/> */}
+        <Projects/>
       </div>
 
       <div className="about__team">
