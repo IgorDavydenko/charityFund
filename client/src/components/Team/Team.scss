@@ -1,11 +1,17 @@
 .team {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.5em;
   justify-content: center;
 
 }
 
 .teammate {
+  position: relative;
+
+  width: 400px;
+  height: 400px;
+
+
   
 }

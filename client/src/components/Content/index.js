@@ -5,14 +5,16 @@ import {
   useLocation
 } from 'react-router-dom'
 
-import About from '../About/index.js';
+import About from '../About/index.js'
 import CommonPage from './CommonPage.js'
+import HomePage from '../HomePage/index.js'
 
+import Partners from '../Partners/index.js';
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
-import HomePage from '../HomePage/index.js';
+
 import Footer from '../Footer/index.js'
-import Partners from '../Partners/index.js';
+
 import Projects from '../Projects/index.js';
 import Gratitude from '../Gratitude/index.js';
 import Photos from '../Photos/index.js';
@@ -24,10 +26,10 @@ const Content = () => {
   return (
     <div className="content-wrapper">
       <Switch>
-        <Route exact path='/' component={ HomePage } />
-        <Route exact path='/about' component={ CommonPage(About) } />
-        <Route exact path='/team' component={ CommonPage(Team) } />
-        <Route exact path='/partners' component={ CommonPage(Partners) } />
+        <Route path='/about' component={ CommonPage(About) } />
+        <Route path='/team' component={ CommonPage(Team) } />
+        <Route path='/partners' component={ CommonPage(Partners) } />
+        <Route path='/' component={ HomePage } />
       </Switch>
       {/* {
         ( useLocation().pathname != '/') ? <Footer /> : ''

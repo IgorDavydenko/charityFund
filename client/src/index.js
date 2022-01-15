@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 import Header from './components/Header/index.js'
 import Content from './components/Content/index.js'
@@ -11,10 +11,10 @@ import './style.scss'
 ReactDOM.render(
     <React.StrictMode>
         <div className="charityApp-wrapper">
-            <Router>
+            <BrowserRouter>
                 <Header />
                 <Content />
-            </Router>
+            </BrowserRouter>
             <Hands />
         </div>
     </React.StrictMode>
