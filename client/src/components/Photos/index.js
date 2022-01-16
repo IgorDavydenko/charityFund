@@ -37,6 +37,21 @@ const Photos = () => {
             КОУ ВО Бобровская специальная школа-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья
           </div>
         </NavLink>
+        <NavLink 
+            className="photos__item"
+            to="/photos/rudny">
+
+          <div className="photos__preview"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/rudny/rudny_01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+          <div className="photos__name">
+            КОУ ВО "Руднянская школа интернат"
+          </div>
+        </NavLink>
     </div>
   )
 }

@@ -14,6 +14,8 @@ import Gratitude from '../Gratitude/index.js';
 import Photos from '../Photos/index.js';
 import ZemlyanskPhotos from '../Photos/ZemlyanskPhotos/index.js'
 import BobrovPhotos from '../Photos/BobrovPhotos/index.js'
+import RudnyPhotos from '../Photos/RudnyPhotos/index.js'
+
 
 import './Content.scss'
 
@@ -32,6 +34,7 @@ const Content = () => {
         <Route exact path='/photos' component={ Photos }/>
         <Route exact path='/photos/zemlyansk' component={ ZemlyanskPhotos }/>
         <Route exact path='/photos/bobrov' component={ BobrovPhotos }/>
+        <Route exact path='/photos/rudny' component={ RudnyPhotos }/>
       </Switch> 
     </div>
   )
