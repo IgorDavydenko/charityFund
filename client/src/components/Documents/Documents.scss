@@ -1,7 +1,17 @@
 .documents {
+  padding: 20px;
+
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
+  align-items: center;
   justify-content: center;
+}
 
+.document {
+  a {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #BF1932;
+  }
 }
