@@ -11,6 +11,14 @@ const Gratitude = (props) => {
           preview="/gratitudes/zemplyansk_school.jpg"
           path="/gratitudes/zemplyansk_school.jpg"
           title="Землянская школа-интернат"/>
+      <Card 
+          preview="/gratitudes/bobrov_school.jpg"
+          path="/gratitudes/bobrov_school.jpg"
+          title="Бобровская школа-интернат"/>
+      <Card 
+          preview="/gratitudes/rudny_school.jpg"
+          path="/gratitudes/rudny_school.jpg"
+          title="Руднянская школа-интернат"/>
       {/* <a href="/files/Licence.pdf" target="_blank">licence</a> */}
     </div>
   )

@@ -2,17 +2,16 @@ import React from 'react'
 import './About.scss'
 
 import Documents from '../Documents/index.js'
+import Gratitude from '../Gratitude/index.js'
 import Projects from '../Projects/index.js'
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
-
-
 
 const About = () => {
 
   return (
     <div className="about-wrapper">
-      <section className="about__section about__mission">
+      <section className="about__section about__mission" id="mission">
         <h2>Наша миссия</h2>
         <p>
           Увидев и осознав масштаб проблем детей-сирот, мы поняли, что не сможем закрыть глаза на это и вернутся к прежней размеренной жизни.
@@ -21,26 +20,31 @@ const About = () => {
         </p>
       </section>
 
-      <section className="about__section about__projects">
+      <section className="about__section about__projects" id="projects">
         <h2>Проекты</h2>
         <Projects/>
       </section>
 
-      <section className="about__section about__team">
+      <section className="about__section about__team" id="team">
         <h2>Команда</h2>
         <Team/>
       </section>
 
-      <section className="about__section about__documents">
-        <h2>Документы</h2>
-        <Documents/>
+      <section className="about__section about__thanks" id="thanks">
+        <h2>Благодарности</h2>
+        <Gratitude/>
       </section>
 
-      <section className="about__section about__requisites">
+      <section className="about__section about__requisites" id="requisites">
         <h2>Реквизиты</h2>
         <Requisites/>
       </section>
 
+      <section className="about__section about__documents" id="documents">
+        <h2>Документы</h2>
+        <Documents/>
+      </section>
+      
     </div>
   )
 }
