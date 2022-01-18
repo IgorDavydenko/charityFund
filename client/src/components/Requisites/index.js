@@ -10,7 +10,7 @@ const Requisites = () => {
       </div>
       <div className="requisites__item requisites__adress">
         Юридический адрес: г. Воронеж, ул. Владимира Невского, д.25/5, помещ.3<br/>
-        Фактический адрес: г. Воронеж, ул. Хользунова 107 Е<br/>
+        Фактический адрес: г. Воронеж, ул. Хользунова 107 А<br/>
       </div>
       <div className="requisites__item requisites__adress">
         ИНН/ КПП 3662294982/366201001<br/>

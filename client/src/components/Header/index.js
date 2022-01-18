@@ -33,7 +33,7 @@ const Header = () => {
             <div>otserdca36@mail.ru</div>
           </div>
           <div className="contacts__adress">
-            г. Воронеж, Ул. Хользунова 107 E
+            г. Воронеж, Ул. Хользунова 107 А
           </div>
         </div>
       </div>
