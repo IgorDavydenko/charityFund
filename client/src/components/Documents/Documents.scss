@@ -3,9 +3,9 @@
 
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2em;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .document {
@@ -13,5 +13,15 @@
     font-style: italic;
     text-decoration: underline;
     text-decoration-color: #BF1932;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #BF1932;
+    margin: 5px;
   }
 }
