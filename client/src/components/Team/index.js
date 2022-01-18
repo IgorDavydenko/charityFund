@@ -13,7 +13,6 @@ const Team = () => {
 
   return (
     <div className="team">
-
       <div className="teammate"
         style={{
           backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/SerezkinaVA.jpg'})`,

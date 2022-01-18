@@ -22,7 +22,6 @@ const Content = () => {
     <div className="content-wrapper">
       <Switch>
         <Route path='/about' component={ CommonPage(About) } />
-        <Route path='/team' component={ CommonPage(Team) } />
         <Route path='/projects' component={ CommonPage(Projects) } />
         <Route path='/partners' component={ CommonPage(Partners) } />
         <Route path='/' component={ HomePage } />

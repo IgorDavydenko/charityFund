@@ -46,14 +46,6 @@
     font-size: 18px;
     z-index: 1;
   }
-
-  &:hover {
-    // transform: scale(1.2);
-    background-size: 120% 120%;
-    .teammate__info {
-      display: none;
-    }
-  }
 }
 
 // .teammate:before {
