@@ -2,7 +2,7 @@ import React from 'react'
 import './About.scss'
 
 import Documents from '../Documents/index.js'
-import Gratitude from '../Gratitude/index.js'
+import Gratitudes from '../Gratitudes/index.js'
 import Projects from '../Projects/index.js'
 import Requisites from '../Requisites/index.js'
 import Team from '../Team/index.js'
@@ -30,9 +30,9 @@ const About = () => {
         <Team/>
       </section>
 
-      <section className="about__section about__thanks" id="thanks">
+      <section className="about__section about__thanks" id="gratitudes">
         <h2>Благодарности</h2>
-        <Gratitude/>
+        <Gratitudes/>
       </section>
 
       <section className="about__section about__requisites" id="requisites">
