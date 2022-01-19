@@ -20,4 +20,30 @@
     font-size: 20px;
     font-weight: bold;
   }
+
+  &__img-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(191, 25, 50, .7);
+    visibility: hidden;
+
+    svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+    }
+  }
+}
+
+.gratitude:hover {
+  .gratitude__img-full {
+    visibility: visible;
+  }
 }
