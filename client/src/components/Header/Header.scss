@@ -15,17 +15,17 @@
     background-color: #BF1932;
   }
 
-  &__body {
+  &__container {
     position: relative;
     z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 80px;
   }
 
   &__logo {
     flex: 0 0 80px;
-
     svg {
       fill: white;
     }
