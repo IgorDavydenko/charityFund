@@ -63,6 +63,9 @@ const Header = () => {
                     <li>
                       <HashLink to="/about#documents" className="menu__sub-link">Документы</HashLink>
                     </li>
+                    <li>
+                      <HashLink to="/about#contacts" className="menu__sub-link">Контакты</HashLink>
+                    </li>
                   </ul>
               </li>
               <li>
