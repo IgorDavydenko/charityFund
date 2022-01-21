@@ -1,20 +1,17 @@
 import React from 'react'
 import {
   Switch,
-  Route,
-  useLocation
+  Route
 } from 'react-router-dom'
+
+import './Content.scss'
 
 import About from '../About/index.js'
 import CommonPage from './CommonPage.js'
 import HomePage from '../HomePage/index.js'
 import Partners from '../Partners/index.js';
-import Projects from '../Projects/index.js';
-import Team from '../Team/index.js'
-
 import Photos from '../Photos/index.js';
-
-import './Content.scss'
+import Projects from '../Projects/index.js';
 
 const Content = () => {
 
@@ -24,6 +21,7 @@ const Content = () => {
         <Route path='/about' component={ About } />
         <Route path='/projects' component={ CommonPage(Projects) } />
         <Route path='/partners' component={ CommonPage(Partners) } />
+        <Route path='/events' component={ CommonPage(Photos) } />
         <Route path='/' component={ HomePage } />
       </Switch>
       {/* {
