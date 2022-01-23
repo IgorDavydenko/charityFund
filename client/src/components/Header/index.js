@@ -1,30 +1,43 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import { isMobile } from './headerUtils.js'
 
 import './Header.scss' 
 
-const mainMenuList = [
-  {
-    name: 'О нас',
-    path: '/about',
-    subMenu: {
-      subName: 'О нас',
-      subPath: '/about',
-    }
-  },
-  {
-    name: 'Проекты',
-    path: '/projects'},
-  {
-    name: 'Партнёры',
-    path: '/partners'
-  }, 
-  {
-    name: 'События',
-    path: '/events'
-  }
-];
+// const mainMenuList = [
+//   {
+//     name: 'О нас',
+//     path: '/about',
+//     subMenu: {
+//       subName: 'О нас',
+//       subPath: '/about',
+//     }
+//   },
+//   {
+//     name: 'Проекты',
+//     path: '/projects'},
+//   {
+//     name: 'Партнёры',
+//     path: '/partners'
+//   }, 
+//   {
+//     name: 'События',
+//     path: '/events'
+//   }
+// ];
+
+console.log('hello from header.')
+if (isMobile.any()) {
+  console.log('mobile')
+} else {
+  console.log('desktop')
+}
+
+const menuArrowClickHandler = (e) => {
+  console.log(e.target.parentElement.classList)
+  e.target.parentElement.classList.toggle('_active')
+}
 
 const Header = () => {
   return (
@@ -39,34 +52,35 @@ const Header = () => {
           <div className="menu__icon">
             <span></span>
           </div>
-          <nav className="menu__body">
+          <nav className={"menu__body " + (isMobile.any() ? "menu__mobile" : "menu__desktop")}>
             <ul className="menu__list">
               <li>
                 <NavLink className="menu__link" activeClassName="active"
                   to="/about">О нас</NavLink>
-                  <ul className="menu__sub-list">
-                    <li>
-                      <HashLink to="/about#mission" className="menu__sub-link">Миссия</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#projects" className="menu__sub-link">Проекты</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#team" className="menu__sub-link">Команда</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#gratitudes" className="menu__sub-link">Благодарности</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#requisites" className="menu__sub-link">Реквизиты</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#documents" className="menu__sub-link">Документы</HashLink>
-                    </li>
-                    <li>
-                      <HashLink to="/about#contacts" className="menu__sub-link">Контакты</HashLink>
-                    </li>
-                  </ul>
+                <span className="menu__arrow" onClick={menuArrowClickHandler}></span>
+                <ul className="menu__sub-list">
+                  <li>
+                    <HashLink to="/about#mission" className="menu__sub-link">Миссия</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#projects" className="menu__sub-link">Проекты</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#team" className="menu__sub-link">Команда</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#gratitudes" className="menu__sub-link">Благодарности</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#requisites" className="menu__sub-link">Реквизиты</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#documents" className="menu__sub-link">Документы</HashLink>
+                  </li>
+                  <li>
+                    <HashLink to="/about#contacts" className="menu__sub-link">Контакты</HashLink>
+                  </li>
+                </ul>
               </li>
               <li>
                 <NavLink className="menu__link" activeClassName="active"
