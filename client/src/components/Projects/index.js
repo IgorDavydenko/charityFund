@@ -23,13 +23,13 @@ const Projects = () => {
               </p>
             </div>
             <div className="orhpanage__imgs">
-              <div class="orhpanage__img orhpanage__img_primary">
+              <div className="orhpanage__img orhpanage__img_primary">
                 <img src="/img/projects/orphanage/Kiev_172667-mini.jpg"></img>
               </div>
-              <div class="orhpanage__img orhpanage__img_secondary">
+              <div className="orhpanage__img orhpanage__img_secondary">
                   <img src="/img/projects/orphanage/i.jpg"></img>
                 </div>
-                <div class="orhpanage__img orhpanage__img_secondary">
+                <div className="orhpanage__img orhpanage__img_secondary">
                   <img src="/img/projects/orphanage/scale_1200.jpg"></img>
                 </div>
             </div>
