@@ -25,7 +25,7 @@ const Events = () => {
 
       <section className="event">
         <div className="event__img">
-          <img src='/img/albums/zemlyansk/bobrov_02.jpg'/>
+          <img src='/img/albums/bobrov/bobrov_02.jpg'/>
         </div>
         <div className="event__description">
           <h3 className="event__title">
@@ -33,14 +33,14 @@ const Events = () => {
           </h3>
         </div>
         <NavLink className="event__show-more"
-          to="/events/zemlyansk">
+          to="/events/bobrov">
           <span>подробнее</span>
         </NavLink>
       </section>
 
       <section className="event">
         <div className="event__img">
-          <img src='/img/albums/zemlyansk/rudny_01.jpg'/>
+          <img src='/img/albums/rudny/rudny_01.jpg'/>
         </div>
         <div className="event__description">
           <h3 className="event__title">
@@ -48,7 +48,7 @@ const Events = () => {
           </h3>
         </div>
         <NavLink className="event__show-more"
-          to="/events/zemlyansk">
+          to="/events/rudny">
           <span>подробнее</span>
         </NavLink>
       </section>
