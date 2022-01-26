@@ -8,10 +8,15 @@ import './Content.scss'
 
 import About from '../About/index.js'
 import CommonPage from './CommonPage.js'
-import Events from '../Events/index.js';
 import HomePage from '../HomePage/index.js'
 import Partners from '../Partners/index.js';
 import Projects from '../Projects/index.js';
+
+import Events from '../Events/index.js';
+import BobrovAlbum from '../Events/bobrov.js';
+import RudnyAlbum from '../Events/rudny.js';
+import ZemlyanskAlbum from '../Events/zemlyansk.js';
+
 
 const Content = () => {
 
@@ -22,6 +27,9 @@ const Content = () => {
         <Route path='/projects' component={ CommonPage(Projects) } />
         <Route path='/partners' component={ CommonPage(Partners) } />
 
+        <Route path='/events/bobrov' component={ CommonPage(BobrovAlbum) } />
+        <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
+        <Route path='/events/zemlyansk' component={ CommonPage(ZemlyanskAlbum) } />
         <Route path='/events' component={ CommonPage(Events) } />
 
         <Route path='/' component={ HomePage } />

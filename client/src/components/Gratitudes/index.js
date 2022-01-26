@@ -7,7 +7,7 @@ const Gratitudes = () => {
       <div className="gratitude">
         <div className="gratitude__img"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/zemplyansk_school.jpg'})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/zemplyansk_school_preview.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
             backgroundSize: 'auto 100%',
@@ -25,7 +25,7 @@ const Gratitudes = () => {
       <div className="gratitude">
         <div className="gratitude__img"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/bobrov_school.jpg'})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/bobrov_school_preview.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
             backgroundSize: 'auto 100%',
@@ -43,7 +43,7 @@ const Gratitudes = () => {
       <div className="gratitude">
         <div className="gratitude__img"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/rudny_school.jpg'})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/gratitudes/rudny_school_preview.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
             backgroundSize: 'auto 100%',

@@ -1,21 +1,13 @@
 import React from 'react'
 import './Team.scss'
 
-const partnersList = [
-  {
-    name: "Серёжкина Валентина Андреевна",
-    role: "Директор",
-    avatarPath: '/img/team/SerezkinaVA.jpg',
-  },
-]
-
 const Team = () => {
 
   return (
     <div className="team">
       <div className="teammate"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/SerezkinaVA.jpg'})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/SerezkinaVA_photo_small.jpg'})`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: '50% 50%',
           backgroundSize: 'auto 100%',
@@ -31,7 +23,7 @@ const Team = () => {
       </div>
       <div className="teammate"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/VelozemcevaOV.jpg'})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/VelozemcevaOV_photo_small.jpg'})`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: '50% 50%',
           backgroundSize: 'auto 100%',
@@ -45,16 +37,6 @@ const Team = () => {
           </div>
         </div>
       </div>
-
-
-      {/* <Card
-        avatarPath='/img/team/SerezkinaVA.jpg'
-        name="Серёжкина Валентина Андреевна"
-        role="Директор" />
-      <Card
-        avatarPath='/img/team/VelozemcevaOV.jpg'
-        name="Везломцева Ольга Валерьевна"
-        role="Менеджер" /> */}
     </div>
   )
 }
