@@ -42,6 +42,9 @@ const HomePage = () => {
                 <div>otserdca36@mail.ru</div>
               </a>
             </div>
+            <div className="homepage__slogan">
+              Открой своё <span className="item_font-red">сердце</span>! Наполни его <span className="item_font-red">добром</span> и <span className="item_font-red">любовью</span>!
+            </div>
           </div>
         </div>
       </section>

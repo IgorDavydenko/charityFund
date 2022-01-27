@@ -1,15 +1,16 @@
-.homepage {
+.fullscreen {
+    min-height: 90vh;
+    display: flex;
 
-    .fullscreen {
-        min-height: 90vh;
-        display: flex;
-    }
-
-    .fullscreen__body {
+    &__body {
         flex: 1 1 auto;
         display: flex;
         align-items: center;
     }
+}
+
+.homepage {
+    position: relative;
 
     &__logo {
         width: 50%;
@@ -45,6 +46,10 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    &__slogan {
+        text-align: center;
+    }
 }
 
 .social__item {
@@ -58,5 +63,33 @@
     svg {
         margin-right: 20px;
         fill: #BF1932;
+    }
+}
+
+@media (max-width: 425px) {
+    .fullscreen__body {
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .homepage {
+        min-width: 320px;
+
+        &__logo {
+            display: none;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+
+        &__title {
+            font-size: 36px;
+            margin: 30px 0 20px 0;
+        }
+
+        &__social {
+            justify-content: end;
+        }
     }
 }
