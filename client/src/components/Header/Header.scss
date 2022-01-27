@@ -15,12 +15,11 @@ body._lock {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
   }
 
   &__logo {
     margin: 0 15px;
-    flex: 0 0 80px;
+    flex: 0 0 75px;
     z-index: 10;
     svg {
       fill: #fff;
