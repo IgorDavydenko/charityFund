@@ -21,9 +21,6 @@ const HomePage = () => {
           <div className="homepage__logo"
             style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/logo.jpg'})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
           }}></div>
           <div className="homepage__info">
             <div className="homepage__description">автономная некоммерческая организация помощи семье и детям</div>

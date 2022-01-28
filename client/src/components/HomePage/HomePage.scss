@@ -15,6 +15,9 @@
     &__logo {
         width: 50%;
         height: 50%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: auto 100%;
     }
 
     &__info {
@@ -66,18 +69,17 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .fullscreen__body {
-        align-items: flex-start;
+        align-items: center;
         position: relative;
+        flex-flow: column-reverse;
+        gap: 10px;
+        margin-bottom: 100px;
     }
 
     .homepage {
         min-width: 320px;
-
-        &__logo {
-            display: none;
-        }
 
         &__description {
             font-size: 18px;
@@ -90,6 +92,18 @@
 
         &__social {
             justify-content: end;
+        }
+
+        &__logo {
+            background-size: auto 100%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .homepage {
+        &__logo {
+            background-size: 100% auto;
         }
     }
 }
