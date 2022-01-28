@@ -44,10 +44,10 @@ const About = () => {
         <h2>Документы</h2>
         <Documents/>
       </section>
-
+{/* 
       <section className="about__section about__documents" id="contacts">
         <h2>Контакты</h2>
-      </section>
+      </section> */}
       
     </div>
   )
