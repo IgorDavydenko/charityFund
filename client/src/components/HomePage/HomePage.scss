@@ -10,6 +10,7 @@
 }
 
 .homepage {
+    min-width: 320px;
     position: relative;
 
     &__logo {
@@ -79,8 +80,6 @@
     }
 
     .homepage {
-        min-width: 320px;
-
         &__description {
             font-size: 18px;
         }
@@ -100,7 +99,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 900px) {
     .homepage {
         &__logo {
             background-size: 100% auto;
