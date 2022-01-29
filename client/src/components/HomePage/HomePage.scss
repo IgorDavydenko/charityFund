@@ -70,7 +70,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     .fullscreen__body {
         align-items: center;
         position: relative;
@@ -94,7 +94,7 @@
         }
 
         &__logo {
-            background-size: auto 100%;
+            background-size: 100% auto;
         }
     }
 }
