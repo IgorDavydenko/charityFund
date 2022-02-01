@@ -16,6 +16,9 @@
     margin: 20px auto;
     padding: 0 20px;
     display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -34,5 +37,12 @@
       fill: #BF1932;
       width: 24px;
       height: 24px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .footer__contacts {
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1.5em;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .partner {
@@ -12,8 +12,8 @@
   justify-content: center;
   position: relative;
 
-  width: 400px;
-  height: 400px;
+  width: 240px;
+  height: 240px;
     
   &__logo {
     display: block;
@@ -62,5 +62,23 @@
   
   .partner__logo {
     filter: blur(7px);
+  }
+}
+
+@media (min-width: 481px) {
+  .partners {
+    justify-content: space-around;
+  }
+
+  .partner {  
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 769px) {
+  .partner {  
+    width: 400px;
+    height: 400px;
   }
 }

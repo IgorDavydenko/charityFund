@@ -34,7 +34,7 @@ const partnersList = [
     name: 'Вкус Черноземья',
     logo: {
       path: '/img/sponsors/vkus_chernozemya.png',
-      size: '100% aute'
+      size: '100% auto'
     },
     links: {
       url: "http://vkusvrn.ru/",
