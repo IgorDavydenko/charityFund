@@ -117,7 +117,6 @@ body._lock {
 
   }
 
-
   .menu__link {
     flex: 1 1 auto;
   }
@@ -149,6 +148,10 @@ body._lock {
 }
 
 @media (max-width: 767px) {
+  .header__menu {
+    flex: 0 1 auto;
+  }
+
   .menu {
     &__icon {
       z-index: 5;
@@ -261,7 +264,7 @@ body._lock {
 
     &-link {
       font-size: 20px;
-      color: #000;
+      color: #BF1932;
       padding: 10px 0px 0px 0px;
     }
   }
