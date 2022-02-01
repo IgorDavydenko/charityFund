@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   gap: 2em;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .document {
@@ -19,9 +19,18 @@
   }
 
   svg {
+    display: block;
     width: 32px;
     height: 32px;
     fill: #BF1932;
     margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .documents {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
   }
 }
