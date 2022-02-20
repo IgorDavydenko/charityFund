@@ -11,6 +11,25 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/anna_01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Аннинская специальная общеобразовательная школа
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/anna">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/zemlyansk_09.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
