@@ -16,6 +16,7 @@ import Events from '../Events/index.js';
 import AnnaAlbum from '../Events/anna.js';
 import BobrovAlbum from '../Events/bobrov.js';
 import RudnyAlbum from '../Events/rudny.js';
+import VerhMamonAlbum from '../Events/verhMamon.js';
 import ZemlyanskAlbum from '../Events/zemlyansk.js';
 
 
@@ -31,6 +32,7 @@ const Content = () => {
         <Route path='/events/anna' component={ CommonPage(AnnaAlbum) } />
         <Route path='/events/bobrov' component={ CommonPage(BobrovAlbum) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
+        <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
         <Route path='/events/zemlyansk' component={ CommonPage(ZemlyanskAlbum) } />
         <Route path='/events' component={ CommonPage(Events) } />
 
