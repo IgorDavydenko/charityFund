@@ -94,11 +94,16 @@
 }
 
 .album {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
+  align-items: center;
 
   &__back {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 
     svg {
       fill: #BF1932;
@@ -132,6 +137,11 @@
       object-fit: cover;
     }
   }
+
+  &__video {
+    height: 400px;
+    width: 300px;
+  }
 }
 
 @media (max-width: 425.98px) {
@@ -140,6 +150,11 @@
     gap: 1em;
     align-items: center;
     justify-content: center;
+  }
+
+  .album__video {
+    height: 300px;
+    width: 250px;
   }
 }
 

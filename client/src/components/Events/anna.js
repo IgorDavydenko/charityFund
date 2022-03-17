@@ -14,31 +14,34 @@ const AnnaAlbum = () => {
         <div className="">назад к событиям</div>
       </NavLink>
       <div className="album__description">
-          <p>
-            11 февраля АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Чудеса случаются» для «Аннинской специальной общеобразовательной школы» где находятся дети попавшие в сложную жизненную ситуацию или брошены родителями. Благодарим всех кто принимал участие!<br/>
-            «Благотворительная душа будет насыщена, кто напояет других, тот и сам напоен будет» Пр.: 11:25
-          </p>
-        </div>
-        <SRLWrapper>
-          <div className="album__photos">
-            <div className="photo__item">
-              <img src='/img/albums/anna/anna_01.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/anna/anna_02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/anna/anna_03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/anna/anna_04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/anna/anna_05.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+        <p>
+          11 февраля АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Чудеса случаются» для «Аннинской специальной общеобразовательной школы» где находятся дети попавшие в сложную жизненную ситуацию или брошены родителями. Благодарим всех кто принимал участие!<br/>
+          «Благотворительная душа будет насыщена, кто напояет других, тот и сам напоен будет» Пр.: 11:25
+        </p>
       </div>
+      <SRLWrapper>
+        <div className="album__photos">
+          <div className="photo__item">
+            <img src='/img/albums/anna/anna_01.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/anna/anna_02.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/anna/anna_03.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/anna/anna_04.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/anna/anna_05.jpg'/>
+          </div>
+        </div>
+      </SRLWrapper>
+      <video className="album__video" controls>
+        <source src="/video/anna.mp4" type="video/mp4"></source>
+      </video>
+    </div>
   )
 }
 
