@@ -9,7 +9,7 @@ const partnersList = [
     },
     links: {
       url: "https://www.meatisru.com",
-      instagram: "https://www.instagram.com/meatisru/"
+      // instagram: "https://www.instagram.com/meatisru/"
     }
   },
   {

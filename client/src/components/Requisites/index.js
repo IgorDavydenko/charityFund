@@ -23,9 +23,9 @@ const Requisites = () => {
       <div className="requisites__item requisites__phone">
         телефон: <a className="item_font-red" href="tel:+79304016757">+7 (930) 401-67-57</a>
       </div>
-      <div className="requisites__item requisites__card">
+      {/* <div className="requisites__item requisites__card">
         Карта сбербанка: 2202 2004 7999 9375 Валентина Андреевна С
-      </div>
+      </div> */}
     </div>
   )
 }
