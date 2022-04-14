@@ -1,7 +1,7 @@
 import React from 'react'
 import { SRLWrapper } from "simple-react-lightbox";
 
-import './Photos.scss'
+import './Events.scss'
 
 const Album = () => {
 
