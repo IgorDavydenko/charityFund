@@ -14,32 +14,32 @@ const VerhMamonAlbum = () => {
         <div className="">назад к событиям</div>
       </NavLink>
       <div className="album__description">
-          <p>
-            4 марта АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Доброта спасёт мир» для КОУ ВО «Верхнемамонской школы-интернат для обучающихся с ограниченными возможностями здоровья».
-            <br/>Благодарим всех наших партнёров, и людей которые принимали участие в это не простое для страны время.
-            <br/>«Не отказывай в благодеянии нуждающимся, когда рука твоя в силе сделать его.» Притчи 3:27
-          </p>
-        </div>
-        <SRLWrapper>
-          <div className="album__photos">
-            <div className="photo__item">
-              <img src='/img/albums/verh_mamon/01.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/verh_mamon/02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/verh_mamon/03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/verh_mamon/04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/verh_mamon/05.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+        <p>
+          4 марта АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Доброта спасёт мир» для КОУ ВО «Верхнемамонской школы-интернат для обучающихся с ограниченными возможностями здоровья».
+          <br/>Благодарим всех наших партнёров, и людей которые принимали участие в это не простое для страны время.
+          <br/>«Не отказывай в благодеянии нуждающимся, когда рука твоя в силе сделать его.» Притчи 3:27
+        </p>
       </div>
+      <SRLWrapper>
+        <div className="album__photos">
+          <div className="photo__item">
+            <img src='/img/albums/verh_mamon/01.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/verh_mamon/02.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/verh_mamon/03.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/verh_mamon/04.jpg'/>
+          </div>
+          <div className="photo__item">
+            <img src='/img/albums/verh_mamon/05.jpg'/>
+          </div>
+        </div>
+      </SRLWrapper>
+    </div>
   )
 }
 
