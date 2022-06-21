@@ -7,6 +7,44 @@ const Events = () => {
 
   return (
     <div className="events">
+      
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/concert-28-05/03.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Благотворительный концерт сбор на лечение детей с онкологическими заболеваниями и ограниченными возможностями
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/concert-28-05">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/buturlinovka/buturlinovka_01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Бутурлиновская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/buturlinovka">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
 
       <section className="event">
         <div className="event__img"
