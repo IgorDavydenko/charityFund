@@ -19,6 +19,7 @@ import BobrovAlbum from '../Events/bobrov.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
 import Concert01Album from '../Events/concert_01.js';
 import RudnyAlbum from '../Events/rudny.js';
+import Panino from '../Events/panino.js';
 import Pavlovsk from '../Events/pavlovsk.js';
 import VerhMamonAlbum from '../Events/verhMamon.js';
 import ZemlyanskAlbum from '../Events/zemlyansk.js';
@@ -38,6 +39,7 @@ const Content = () => {
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
+        <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
         <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
         <Route path='/events/zemlyansk' component={ CommonPage(ZemlyanskAlbum) } />

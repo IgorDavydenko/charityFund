@@ -7,7 +7,25 @@ const Events = () => {
 
   return (
     <div className="events">
-      
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/panino_01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Панинский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/panino">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
       <section className="event">
         <div className="event__img"
             style={{ 
