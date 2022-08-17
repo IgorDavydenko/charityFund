@@ -10,6 +10,25 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/kantemirovka/kantemirovka_01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Кантемировский центр помощи детям дошкольного возраста
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/kantemirovka">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+      
+      <section className="event">
+        <div className="event__img"
+            style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/panino_01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
