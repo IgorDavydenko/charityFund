@@ -19,6 +19,7 @@ import BobrovAlbum from '../Events/bobrov.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
 import Concert01Album from '../Events/concert_01.js';
 import Kantemirovka from '../Events/kantemirovka.js';
+import Lisky from '../Events/lisky'
 import RudnyAlbum from '../Events/rudny.js';
 import Panino from '../Events/panino.js';
 import Pavlovsk from '../Events/pavlovsk.js';
@@ -40,6 +41,7 @@ const Content = () => {
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
         <Route path='/events/kantemirovka' component={ CommonPage(Kantemirovka) } />
+        <Route path='/events/lisky' component={ CommonPage(Lisky) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
         <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
