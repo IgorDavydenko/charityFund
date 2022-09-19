@@ -3,31 +3,50 @@ import './Partners.scss'
 
 const partnersList = [
   {
-    name: 'Мясо есть',
+    name: 'TForma',
     logo: {
-      path: '/img/sponsors/myaso_est.jpg',
+      path: '/img/sponsors/tforma.jpg'
     },
     links: {
-      url: "https://www.meatisru.com",
+      url: "https://tforma.ru/"
+    }
+  },
+  {
+    name: 'ПАРАНГОН',
+    logo: {
+      path: '/img/sponsors/parangon.png',
+      size: '100% auto'
+    },
+    links: {
+      url: "https://parangonv.ru/"
+    }
+  },
+  {
+    name: 'Мясо есть',
+    logo: {
+      path: '/img/sponsors/myaso_est.jpg'
+    },
+    links: {
+      url: "https://www.meatisru.com"
       // instagram: "https://www.instagram.com/meatisru/"
     }
   },
   {
     name: 'Шинный двор',
     logo: {
-      path: '/img/sponsors/shindvor.jpg',
+      path: '/img/sponsors/shindvor.jpg'
     },
     links: {
-      url: "https://shindvor.com/",
+      url: "https://shindvor.com/"
     }
   },
   {
     name: 'ООО Смена',
     logo: {
-      path: '/img/sponsors/smena.jpg',
+      path: '/img/sponsors/smena.jpg'
     },
     links: {
-      url: "https://smena68.ru/",
+      url: "https://smena68.ru/"
     }
   },
   {
@@ -37,7 +56,7 @@ const partnersList = [
       size: '100% auto'
     },
     links: {
-      url: "http://vkusvrn.ru/",
+      url: "http://vkusvrn.ru/"
     }
   },
 ]
