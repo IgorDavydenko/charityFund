@@ -7,6 +7,65 @@ const Events = () => {
 
   return (
     <div className="events">
+      
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/rudny_06.12/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Руднянская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/rudny-06-12">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/bobrov_02.11/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Бобровская специальная школа-интернат<br/>
+            для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/bobrov-02-11">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ostrogozhsk/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: '100% auto',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Острогожский специальный детский дом для воспитанников с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ostrogozhsk">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
       <section className="event">
         <div className="event__img"
             style={{ 

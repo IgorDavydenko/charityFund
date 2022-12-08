@@ -16,11 +16,14 @@ import Events from '../Events/index.js';
 
 import AnnaAlbum from '../Events/anna.js';
 import BobrovAlbum from '../Events/bobrov.js';
+import BobrovAlbum_02_11 from '../Events/bobrov_02.11.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
 import Concert01Album from '../Events/concert_01.js';
 import Kantemirovka from '../Events/kantemirovka.js';
 import Lisky from '../Events/lisky'
+import Ostrogozhsk from '../Events/ostrogozhsk.js'
 import RudnyAlbum from '../Events/rudny.js';
+import RudnyAlbum_06_12 from '../Events/rudny_06.12.js';
 import Panino from '../Events/panino.js';
 import Pavlovsk from '../Events/pavlovsk.js';
 import VerhMamonAlbum from '../Events/verhMamon.js';
@@ -38,11 +41,14 @@ const Content = () => {
 
         <Route path='/events/anna' component={ CommonPage(AnnaAlbum) } />
         <Route path='/events/bobrov' component={ CommonPage(BobrovAlbum) } />
+        <Route path='/events/bobrov-02-11' component={ CommonPage(BobrovAlbum_02_11) } />
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
         <Route path='/events/kantemirovka' component={ CommonPage(Kantemirovka) } />
         <Route path='/events/lisky' component={ CommonPage(Lisky) } />
+        <Route path='/events/ostrogozhsk' component={ CommonPage(Ostrogozhsk) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
+        <Route path='/events/rudny-06-12' component={ CommonPage(RudnyAlbum_06_12) } />
         <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
         <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
@@ -51,30 +57,8 @@ const Content = () => {
 
         <Route path='/' component={ HomePage } />
       </Switch>
-      {/* {
-        ( useLocation().pathname != '/') ? <Footer /> : ''
-      } */}
     </div>
   )
 }
-/*
-
-    // <div className="content-wrapper" >
-    //   <section className="fullscreen">
-    //     <div className="fullscreen__body">
-    //     <Switch>
-    //       <Route exact path='/' component={ HomePage }/>
-    //       {/* <Route exact path='/projects' component={ Projects }/>
-    //       <Route exact path='/team' component={ Team }/>
-    //       <Route exact path='/documents' component={ Documents }/>
-    //       <Route exact path='/requisites' component={ Requisites }/>
-    //       <Route exact path='/partners' component={ Partners }/>
-    //       <Route exact path='/gratitude' component={ Gratitude }/>
-    //       <Route exact path='/gratitude' component={ Gratitude }/>
-    //       <Route exact path='/photos' component={ Photos }/>
-    //     </Switch>
-    //     </div>
-    //   </section>*/
-
 
 export default Content
