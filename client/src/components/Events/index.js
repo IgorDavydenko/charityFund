@@ -11,6 +11,83 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
           style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/10.05.23/preview.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Землянская школа-интернат<br/>
+            для обучающихся с ограниченными возможностями для здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/zemlyansk-05-23">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/pavlovsk/04.23/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Павловская школа-интернат №1 для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/pavlovsk-04-23">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/verh_mamon/02.01.23/02.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Верхнемамонская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/verhniy-mamon-02-01-23">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/30.12.22/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Аннинская специальная общеобразовательная школа
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/anna-30-12-22">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/rudny_06.12/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
@@ -202,7 +279,7 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
-              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/anna_01.jpg'})`,
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/01/anna_01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
               backgroundSize: 'auto 100%',
@@ -221,7 +298,7 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
-              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/zemlyansk_09.jpg'})`,
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/01/zemlyansk_09.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
               backgroundSize: 'auto 100%',

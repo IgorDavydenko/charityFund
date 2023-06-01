@@ -1,10 +1,10 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 import { SRLWrapper } from "simple-react-lightbox";
+import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
-const AnnaAlbum = () => {
+const ZemlyanskAlbum = () => {
 
   return (
     <div className="album">
@@ -15,34 +15,32 @@ const AnnaAlbum = () => {
       </NavLink>
       <div className="album__description">
         <p>
-          11 февраля АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Чудеса случаются» для «Аннинской специальной общеобразовательной школы» где находятся дети попавшие в сложную жизненную ситуацию или брошены родителями. Благодарим всех кто принимал участие!<br/>
-          «Благотворительная душа будет насыщена, кто напояет других, тот и сам напоен будет» Пр.: 11:25
+        10 мая АНО ПСД "От сердца к сердцу" провели благотворительную акцию "Дарить-значит жить!" для КОУ ВО "Землянской школы-интернат для обучающихся с ограниченными возможностями здоровья".
+        <br/>Выражаем огромную благодарность всем кто оказал поддержку! Спасибо большое за то, что Вы рядом и в тяжкое время и в радостный час! 
+        <br/>Пусть дни ваши будут исполнены счастья, пускай всё плохое уйдёт как вода, и мимо уходят пускай все ненастье и жизнь Вам здоровья несёт и добра!🥳
         </p>
       </div>
       <SRLWrapper>
         <div className="album__photos">
           <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_01.jpg'/>
+            <img src='/img/albums/zemlyansk/10.05.23/01.jpg'/>
           </div>
           <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_02.jpg'/>
+            <img src='/img/albums/zemlyansk/10.05.23/02.jpg'/>
           </div>
           <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_03.jpg'/>
+            <img src='/img/albums/zemlyansk/10.05.23/03.jpg'/>
           </div>
           <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_04.jpg'/>
+            <img src='/img/albums/zemlyansk/10.05.23/04.jpg'/>
           </div>
           <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_05.jpg'/>
+            <img src='/img/albums/zemlyansk/10.05.23/05.jpg'/>
           </div>
         </div>
       </SRLWrapper>
-      <video className="album__video" controls>
-        <source src="/video/anna.mp4" type="video/mp4"></source>
-      </video>
     </div>
   )
 }
 
-export default AnnaAlbum
+export default ZemlyanskAlbum

@@ -23,34 +23,34 @@ const ZemlyanskAlbum = () => {
         <SRLWrapper>
           <div className="album__photos">
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_01.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_01.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_02.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_02.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_03.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_03.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_04.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_04.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_05.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_05.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_06.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_06.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_07.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_07.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_08.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_08.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_09.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_09.jpg'/>
             </div>
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/zemlyansk_10.jpg'/>
+              <img src='/img/albums/zemlyansk/01/zemlyansk_10.jpg'/>
             </div>
           </div>
         </SRLWrapper>

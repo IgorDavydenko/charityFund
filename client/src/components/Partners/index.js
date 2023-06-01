@@ -59,6 +59,16 @@ const partnersList = [
       url: "http://vkusvrn.ru/"
     }
   },
+  {
+    name: 'Арт-Праздник',
+    logo: {
+      path: '/img/sponsors/art-prazdnik.jpg',
+      size: '100% auto'
+    },
+    links: {
+      url: "http://artprazdnik-vrn.ru/"
+    }
+  }
 ]
 
 const Partners = () => {
