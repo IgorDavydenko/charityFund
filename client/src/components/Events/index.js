@@ -10,6 +10,63 @@ const Events = () => {
       
       <section className="event">
         <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ternovka/2023-07-02/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Терновский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ternovka-2023-07-02">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/2023-06-03/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Панинский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/panino-2023-06-03">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ostrogozhsk/2023-09-06/02.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Острогожский центр психолого-педагогической, медицинской и социальной помощи детям дошкольного возраста
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ostrogozhsk-2023-06-09">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
           style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/10.05.23/preview.jpg'})`,
             backgroundRepeat: 'no-repeat',

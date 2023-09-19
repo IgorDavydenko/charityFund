@@ -68,6 +68,16 @@ const partnersList = [
     links: {
       url: "http://artprazdnik-vrn.ru/"
     }
+  },
+  {
+    name: 'Воронежская холодильная компания',
+    logo: {
+      path: '/img/sponsors/vhk.jpg',
+      size: 'auto 100%'
+    },
+    links: {
+      url: "https://vhk-vrn.ru/"
+    }
   }
 ]
 
