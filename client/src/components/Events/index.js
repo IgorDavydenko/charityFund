@@ -11,6 +11,101 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novoosinovka/2024-01-10/03.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Новоосиновская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/novoosinovka-2024-01-10">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/lisky/2023-12-12/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Лискинский социальный приют для детей и подростков
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/liski-2023-12-12">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/kantemirovka/2023-11-02/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Кантемировский центр помощи детям дошкольного возраста
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/kantemirovka-2023-11-02">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novaya_usman/2023-10-06/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Новоусманская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/novaya-usman-2023-10-06">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/gribanovka/2023-08-02/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Грибановский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/gribanovka-2023-08-02">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ternovka/2023-07-02/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',

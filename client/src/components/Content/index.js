@@ -20,13 +20,18 @@ import BobrovAlbum from '../Events/bobrov.js';
 import BobrovAlbum_02_11 from '../Events/bobrov_02.11.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
 import Concert01Album from '../Events/concert_01.js';
+import Gribanovka_2023_08_02 from '../Events/gribanovka.2023-08-02.js'
 import Kantemirovka from '../Events/kantemirovka.js';
+import Kantemirovka_2023_11_02 from '../Events/kantemirovka.2023-11-02.js';
 import Lisky from '../Events/lisky'
+import Lisky_2023_12_12 from '../Events/lisky.2023-12-12.js'
+import NovayaUsman_2023_10_06 from '../Events/novaya.usman.2023-10-06.js';
+import Novoosinovka_2024_01_10 from '../Events/novoosinovka.2024-01-10.js';
 import Ostrogozhsk from '../Events/ostrogozhsk.js'
 import Ostrogozhsk_09_06_23 from '../Events/ostrogozhsk_2023.06.09.js'
 import RudnyAlbum from '../Events/rudny.js';
 import RudnyAlbum_06_12 from '../Events/rudny_06.12.js';
-import Panino from '../Events/panino.js';
+import Panino from '../Events/panino.js'; 
 import Panino_2023_06_03 from '../Events/panino_2023.06.03';
 import Pavlovsk from '../Events/pavlovsk.js';
 import Pavlovsk_04_23 from '../Events/pavlovsk_04.23.js';
@@ -53,8 +58,13 @@ const Content = () => {
         <Route path='/events/bobrov-02-11' component={ CommonPage(BobrovAlbum_02_11) } />
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
+        <Route path='/events/gribanovka-2023-08-02' component={ CommonPage(Gribanovka_2023_08_02) } />
         <Route path='/events/kantemirovka' component={ CommonPage(Kantemirovka) } />
+        <Route path='/events/kantemirovka-2023-11-02' component={ CommonPage(Kantemirovka_2023_11_02) } />
         <Route path='/events/lisky' component={ CommonPage(Lisky) } />
+        <Route path='/events/liski-2023-12-12' component={ CommonPage(Lisky_2023_12_12) } />
+        <Route path='/events/novaya-usman-2023-10-06' component={ CommonPage(NovayaUsman_2023_10_06) } />
+        <Route path='/events/novoosinovka-2024-01-10' component={ CommonPage(Novoosinovka_2024_01_10) } />
         <Route path='/events/ostrogozhsk' component={ CommonPage(Ostrogozhsk) } />
         <Route path='/events/ostrogozhsk-2023-06-09' component={ CommonPage(Ostrogozhsk_09_06_23) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />

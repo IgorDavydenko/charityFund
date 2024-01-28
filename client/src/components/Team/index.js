@@ -40,7 +40,7 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="teammate"
+      {/* <div className="teammate"
         style={{
           backgroundImage: `url(${process.env.PUBLIC_URL + '/img/team/Eliseeva.jpeg'})`,
           backgroundRepeat: 'no-repeat',
@@ -55,7 +55,7 @@ const Team = () => {
             Менеджер
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
   )
