@@ -16,8 +16,10 @@ import Events from '../Events/index.js';
 
 import AnnaAlbum from '../Events/anna.js';
 import Anna_30_12_22 from '../Events/anna_30.12.22';
+import Anna_2024_03_12 from '../Events/anna.2024-03-12.js';
 import BobrovAlbum from '../Events/bobrov.js';
 import BobrovAlbum_02_11 from '../Events/bobrov_02.11.js';
+import Bobrov_2024_02_07 from '../Events/bobrov.2024-02-07.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
 import Concert01Album from '../Events/concert_01.js';
 import Gribanovka_2023_08_02 from '../Events/gribanovka.2023-08-02.js'
@@ -54,8 +56,10 @@ const Content = () => {
         
         <Route path='/events/anna' component={ CommonPage(AnnaAlbum) } />
         <Route path='/events/anna-30-12-22' component={ CommonPage(Anna_30_12_22) } />
+        <Route path='/events/anna-2024-03-12' component={ CommonPage(Anna_2024_03_12) } />
         <Route path='/events/bobrov' component={ CommonPage(BobrovAlbum) } />
         <Route path='/events/bobrov-02-11' component={ CommonPage(BobrovAlbum_02_11) } />
+        <Route path='/events/bobrov-2024-02-07' component={ CommonPage(Bobrov_2024_02_07) } />        
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
         <Route path='/events/gribanovka-2023-08-02' component={ CommonPage(Gribanovka_2023_08_02) } />

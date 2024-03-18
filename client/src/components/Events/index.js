@@ -11,6 +11,44 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
             style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/2024-03-12/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Аннинская специальная общеобразовательная школа
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/anna-2024-03-12">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
+              backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/bobrov/2024-02-07/01.jpg'})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+              backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Бобровская школа-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/bobrov-2024-02-07">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+            style={{ 
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novoosinovka/2024-01-10/03.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
