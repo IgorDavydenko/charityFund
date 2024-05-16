@@ -33,16 +33,17 @@ import Ostrogozhsk from '../Events/ostrogozhsk.js'
 import Ostrogozhsk_09_06_23 from '../Events/ostrogozhsk_2023.06.09.js'
 import RudnyAlbum from '../Events/rudny.js';
 import RudnyAlbum_06_12 from '../Events/rudny_06.12.js';
+import Rudny_2024_04_11 from '../Events/rudniy.2024-04-11.js';
 import Panino from '../Events/panino.js'; 
 import Panino_2023_06_03 from '../Events/panino_2023.06.03';
 import Pavlovsk from '../Events/pavlovsk.js';
+import Pavlovsk_2024_05_07 from '../Events/pavlovsk.2024-05-07.js';
 import Pavlovsk_04_23 from '../Events/pavlovsk_04.23.js';
 import Ternovka_2023_07_02 from '../Events/ternovka_2023.07.02.js';
 import VerhMamonAlbum from '../Events/verhMamon.js';
 import VerhMamon_02_01_23 from '../Events/verhMamon_02.01.23.js';
 import ZemlyanskAlbum from '../Events/zemlyansk.js';
 import ZemlyanskAlbum_05_23 from '../Events/zemlyansk_10.05.23.js';
-
 
 
 const Content = () => {
@@ -73,10 +74,12 @@ const Content = () => {
         <Route path='/events/ostrogozhsk-2023-06-09' component={ CommonPage(Ostrogozhsk_09_06_23) } />
         <Route path='/events/rudny' component={ CommonPage(RudnyAlbum) } />
         <Route path='/events/rudny-06-12' component={ CommonPage(RudnyAlbum_06_12) } />
+        <Route path='/events/rudny-2024-04-11' component={ CommonPage(Rudny_2024_04_11) } />
         <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/panino-2023-06-03' component={ CommonPage(Panino_2023_06_03) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
         <Route path='/events/pavlovsk-04-23' component={ CommonPage(Pavlovsk_04_23) } />
+        <Route path='/events/pavlovsk-2024-05-07' component={ CommonPage(Pavlovsk_2024_05_07) } />
         <Route path='/events/ternovka-2023-07-02' component={ CommonPage(Ternovka_2023_07_02) } />
         <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
         <Route path='/events/verhniy-mamon-02-01-23' component={ CommonPage(VerhMamon_02_01_23) } />
