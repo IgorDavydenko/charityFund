@@ -11,10 +11,67 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
           style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/2024-08-09/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: '100% auto',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Панинский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/panino-2024-08-09">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/verh_mamon/2024-07-02/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: '100% auto',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Верхнемамонская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/verh-mamon-2024-07-02">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/kantemirovka/2024-06-03/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: '100% auto',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Кантемировский центр помощи детям дошкольного возраста
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/kantemirovka-2024-06-03">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/pavlovsk/2024-05-07/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -33,7 +90,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/rudny/2024-04-11/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -52,8 +109,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/2024-03-12/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Аннинская специальная общеобразовательная школа
@@ -71,8 +128,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/bobrov/2024-02-07/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Бобровская школа-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья
@@ -90,8 +147,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novoosinovka/2024-01-10/03.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Новоосиновская школа-интернат для обучающихся с ограниченными возможностями здоровья
@@ -109,8 +166,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/lisky/2023-12-12/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Лискинский социальный приют для детей и подростков
@@ -128,8 +185,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/kantemirovka/2023-11-02/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Кантемировский центр помощи детям дошкольного возраста
@@ -147,8 +204,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novaya_usman/2023-10-06/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Новоусманская школа-интернат для обучающихся с ограниченными возможностями здоровья
@@ -166,8 +223,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/gribanovka/2023-08-02/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Грибановский социально-реабилитационный центр для несовершеннолетних
@@ -185,8 +242,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ternovka/2023-07-02/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Терновский социально-реабилитационный центр для несовершеннолетних
@@ -204,8 +261,8 @@ const Events = () => {
               backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/2023-06-03/01.jpg'})`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '50% 50%',
-              backgroundSize: 'auto 100%',
-          }}></div>
+              backgroundSize: '100% auto',
+            }}></div>
         <div className="event__description">
           <h3 className="event__title">
             Панинский социально-реабилитационный центр для несовершеннолетних
@@ -223,7 +280,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ostrogozhsk/2023-09-06/02.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -242,7 +299,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/10.05.23/preview.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -262,7 +319,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/pavlovsk/04.23/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -281,7 +338,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/verh_mamon/02.01.23/02.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -300,7 +357,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/30.12.22/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">
@@ -319,7 +376,7 @@ const Events = () => {
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/rudny_06.12/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
-            backgroundSize: 'auto 100%',
+            backgroundSize: '100% auto',
           }}></div>
         <div className="event__description">
           <h3 className="event__title">

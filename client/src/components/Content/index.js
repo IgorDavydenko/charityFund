@@ -25,6 +25,7 @@ import Concert01Album from '../Events/concert_01.js';
 import Gribanovka_2023_08_02 from '../Events/gribanovka.2023-08-02.js'
 import Kantemirovka from '../Events/kantemirovka.js';
 import Kantemirovka_2023_11_02 from '../Events/kantemirovka.2023-11-02.js';
+import Kantemirovka_2024_06_03 from '../Events/kantemirovka.2024-06-03.js';
 import Lisky from '../Events/lisky'
 import Lisky_2023_12_12 from '../Events/lisky.2023-12-12.js'
 import NovayaUsman_2023_10_06 from '../Events/novaya.usman.2023-10-06.js';
@@ -36,12 +37,14 @@ import RudnyAlbum_06_12 from '../Events/rudny_06.12.js';
 import Rudny_2024_04_11 from '../Events/rudniy.2024-04-11.js';
 import Panino from '../Events/panino.js'; 
 import Panino_2023_06_03 from '../Events/panino_2023.06.03';
+import Panino_2024_08_09 from '../Events/panino.2024-08-09.js';
 import Pavlovsk from '../Events/pavlovsk.js';
 import Pavlovsk_2024_05_07 from '../Events/pavlovsk.2024-05-07.js';
 import Pavlovsk_04_23 from '../Events/pavlovsk_04.23.js';
 import Ternovka_2023_07_02 from '../Events/ternovka_2023.07.02.js';
 import VerhMamonAlbum from '../Events/verhMamon.js';
 import VerhMamon_02_01_23 from '../Events/verhMamon_02.01.23.js';
+import VerhMamon_24_07_02 from '../Events/verh-mamon.2024-07-02.js'
 import ZemlyanskAlbum from '../Events/zemlyansk.js';
 import ZemlyanskAlbum_05_23 from '../Events/zemlyansk_10.05.23.js';
 
@@ -66,6 +69,7 @@ const Content = () => {
         <Route path='/events/gribanovka-2023-08-02' component={ CommonPage(Gribanovka_2023_08_02) } />
         <Route path='/events/kantemirovka' component={ CommonPage(Kantemirovka) } />
         <Route path='/events/kantemirovka-2023-11-02' component={ CommonPage(Kantemirovka_2023_11_02) } />
+        <Route path='/events/kantemirovka-2024-06-03' component={ CommonPage(Kantemirovka_2024_06_03) } />
         <Route path='/events/lisky' component={ CommonPage(Lisky) } />
         <Route path='/events/liski-2023-12-12' component={ CommonPage(Lisky_2023_12_12) } />
         <Route path='/events/novaya-usman-2023-10-06' component={ CommonPage(NovayaUsman_2023_10_06) } />
@@ -77,12 +81,14 @@ const Content = () => {
         <Route path='/events/rudny-2024-04-11' component={ CommonPage(Rudny_2024_04_11) } />
         <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/panino-2023-06-03' component={ CommonPage(Panino_2023_06_03) } />
+        <Route path='/events/panino-2024-08-09' component={ CommonPage(Panino_2024_08_09) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
         <Route path='/events/pavlovsk-04-23' component={ CommonPage(Pavlovsk_04_23) } />
         <Route path='/events/pavlovsk-2024-05-07' component={ CommonPage(Pavlovsk_2024_05_07) } />
         <Route path='/events/ternovka-2023-07-02' component={ CommonPage(Ternovka_2023_07_02) } />
         <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
         <Route path='/events/verhniy-mamon-02-01-23' component={ CommonPage(VerhMamon_02_01_23) } />
+        <Route path='/events/verh-mamon-2024-07-02' component={ CommonPage(VerhMamon_24_07_02) } />
         <Route path='/events/zemlyansk' component={ CommonPage(ZemlyanskAlbum) } />
         <Route path='/events/zemlyansk-05-23' component={ CommonPage(ZemlyanskAlbum_05_23) } />
         <Route path='/events' component={ CommonPage(Events) } />
