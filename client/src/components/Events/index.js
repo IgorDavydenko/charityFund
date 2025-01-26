@@ -6,8 +6,105 @@ import './Events.scss'
 const Events = () => {
 
   return (
+    
     <div className="events">
       
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ded-moroz/2024-12-27/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Акции «Волшебный мешок Деда мороза» и «А я сегодня Дед мороз»
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ded-moroz-2024-12-27">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/2024-12-05/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+          Аннинская специальная общеобразовательная школа
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/anna-2024-12-05">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ostrogozhsk/2024-11-08/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Острогожская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ostrogozhsk-2024-11-08">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novaya_usman/2024-10-09/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Новоусманская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/novaya-usman-2024-10-09">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+      
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/zemlyansk/2024-09-05/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: '100% auto',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Землянская школа-интернат<br/>
+            для обучающихся с ограниченными возможностями для здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/zemlyansk-2024-09-05">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
       <section className="event">
         <div className="event__img"
           style={{ 
