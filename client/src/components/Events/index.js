@@ -12,6 +12,25 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
           style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ternovka/2025-02-05/01.jpg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Терновский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/ternovka-2025-02-05">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/ded-moroz/2024-12-27/01.jpg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',

@@ -46,6 +46,7 @@ import Pavlovsk from '../Events/pavlovsk.js';
 import Pavlovsk_2024_05_07 from '../Events/pavlovsk.2024-05-07.js';
 import Pavlovsk_04_23 from '../Events/pavlovsk_04.23.js';
 import Ternovka_2023_07_02 from '../Events/ternovka_2023.07.02.js';
+import Ternovka_2025_02_05 from '../Events/ternovka.2025-02-05.js';
 import VerhMamonAlbum from '../Events/verhMamon.js';
 import VerhMamon_02_01_23 from '../Events/verhMamon_02.01.23.js';
 import VerhMamon_24_07_02 from '../Events/verh-mamon.2024-07-02.js'
@@ -95,6 +96,8 @@ const Content = () => {
         <Route path='/events/pavlovsk-04-23' component={ CommonPage(Pavlovsk_04_23) } />
         <Route path='/events/pavlovsk-2024-05-07' component={ CommonPage(Pavlovsk_2024_05_07) } />
         <Route path='/events/ternovka-2023-07-02' component={ CommonPage(Ternovka_2023_07_02) } />
+        <Route path='/events/ternovka-2025-02-05' component={ CommonPage(Ternovka_2025_02_05) } />
+
         <Route path='/events/verhniy-mamon' component={ CommonPage(VerhMamonAlbum) } />
         <Route path='/events/verhniy-mamon-02-01-23' component={ CommonPage(VerhMamon_02_01_23) } />
         <Route path='/events/verh-mamon-2024-07-02' component={ CommonPage(VerhMamon_24_07_02) } />
