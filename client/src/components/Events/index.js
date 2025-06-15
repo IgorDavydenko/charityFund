@@ -12,6 +12,25 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
           style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/nizhnedivitsk/2025-05-03/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Нижнедевицкий социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/nizhnedevitsk-2025-05-03">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/pavlovsk/2025-04-30/01.jpeg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',
@@ -27,7 +46,6 @@ const Events = () => {
           <span>подробнее</span>
         </NavLink>
       </section>
-
 
       <section className="event">
         <div className="event__img"

@@ -31,6 +31,7 @@ import Kantemirovka_2024_06_03 from '../Events/kantemirovka.2024-06-03.js';
 import Kantemirovka_2025_03_06 from '../Events/kantemirovka.2025-03-06.js';
 import Lisky from '../Events/lisky'
 import Lisky_2023_12_12 from '../Events/lisky.2023-12-12.js'
+import Nizhnedevitsk_2025_05_03 from '../Events/nizhnedevitsk.2025.05.03.js';
 import NovayaUsman_2023_10_06 from '../Events/novaya.usman.2023-10-06.js';
 import NovayaUsman_2024_10_09 from '../Events/novaya.usman.2024-10-09.js';
 import Novoosinovka_2024_01_10 from '../Events/novoosinovka.2024-01-10.js';
@@ -84,6 +85,7 @@ const Content = () => {
         <Route path='/events/kantemirovka-2025-03-06' component={ CommonPage(Kantemirovka_2025_03_06) } />
         <Route path='/events/lisky' component={ CommonPage(Lisky) } />
         <Route path='/events/liski-2023-12-12' component={ CommonPage(Lisky_2023_12_12) } />
+        <Route path='/events/nizhnedevitsk-2025-05-03' component={ CommonPage(Nizhnedevitsk_2025_05_03) } />
         <Route path='/events/novaya-usman-2023-10-06' component={ CommonPage(NovayaUsman_2023_10_06) } />
         <Route path='/events/novaya-usman-2024-10-09' component={ CommonPage(NovayaUsman_2024_10_09) } />
         <Route path='/events/novoosinovka-2024-01-10' component={ CommonPage(Novoosinovka_2024_01_10) } />
