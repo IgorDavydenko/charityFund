@@ -1,10 +1,18 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox"
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom'
 
 import './Events.scss'
 
 const Pavlovsk = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/pavlovsk/01.jpg",
+      "/img/albums/pavlovsk/02.jpg",
+      "/img/albums/pavlovsk/03.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,19 +28,17 @@ const Pavlovsk = () => {
           <br/>Добрые дела не остаются не замеченными - они как маяки светят тем, кто ждёт помощи!
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/pavlovsk/01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/pavlovsk/02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/pavlovsk/03.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

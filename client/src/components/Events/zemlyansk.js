@@ -1,10 +1,25 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 import './Events.scss'
 
 const ZemlyanskAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/zemlyansk/01/zemlyansk_01.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_02.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_03.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_04.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_05.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_06.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_07.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_08.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_09.jpg",
+      "/img/albums/zemlyansk/01/zemlyansk_10.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,41 +35,18 @@ const ZemlyanskAlbum = () => {
             Пусть отданное детям сегодня вернётся к вам завтра многократно приумноженным!
           </p>
         </div>
-        <SRLWrapper>
-          <div className="album__photos">
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
             <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_01.jpg'/>
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
             </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_05.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_06.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_07.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_08.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_09.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/zemlyansk/01/zemlyansk_10.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+          ))}
+        </PhotoProvider>
       </div>
+    </div>
   )
 }
 

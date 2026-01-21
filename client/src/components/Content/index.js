@@ -13,18 +13,22 @@ import Partners from '../Partners/index.js';
 import Projects from '../Projects/index.js';
 
 import Events from '../Events/index.js';
+import Events_2025_12_30 from '../Events/events.2025-12-30.js';
 
 import AnnaAlbum from '../Events/anna.js';
 import Anna_30_12_22 from '../Events/anna_30.12.22';
 import Anna_2024_03_12 from '../Events/anna.2024-03-12.js';
 import Anna_2024_12_05 from '../Events/anna.2024-12-05.js';
+import Anna_2025_12_11 from '../Events/anna.2025-12-11.js';
 import BobrovAlbum from '../Events/bobrov.js';
 import BobrovAlbum_02_11 from '../Events/bobrov_02.11.js';
 import Bobrov_2024_02_07 from '../Events/bobrov.2024-02-07.js';
 import ButurlinovkaAlbum from '../Events/buturlinovka.js';
+import Buturlinovka_2025_07_02 from '../Events/buturlinovka.2025-07-02.js';
 import Concert01Album from '../Events/concert_01.js';
 import DedMoroz_2024_12_27 from '../Events/ded-mogoz.2024-12-27';
 import Gribanovka_2023_08_02 from '../Events/gribanovka.2023-08-02.js'
+import Hohol_2025_08_05 from '../Events/hohol.2025-08-05.js'
 import Kantemirovka from '../Events/kantemirovka.js';
 import Kantemirovka_2023_11_02 from '../Events/kantemirovka.2023-11-02.js';
 import Kantemirovka_2024_06_03 from '../Events/kantemirovka.2024-06-03.js';
@@ -34,6 +38,7 @@ import Lisky_2023_12_12 from '../Events/lisky.2023-12-12.js'
 import Nizhnedevitsk_2025_05_03 from '../Events/nizhnedevitsk.2025.05.03.js';
 import NovayaUsman_2023_10_06 from '../Events/novaya.usman.2023-10-06.js';
 import NovayaUsman_2024_10_09 from '../Events/novaya.usman.2024-10-09.js';
+import NovayaUsman_2025_09_09 from '../Events/novaya.usman.2025-09-09.js';
 import Novoosinovka_2024_01_10 from '../Events/novoosinovka.2024-01-10.js';
 import Ostrogozhsk from '../Events/ostrogozhsk.js'
 import Ostrogozhsk_09_06_23 from '../Events/ostrogozhsk_2023.06.09.js'
@@ -45,6 +50,7 @@ import Rudny_2025_04_08 from '../Events/rudny.2025-04-08.js';
 import Panino from '../Events/panino.js'; 
 import Panino_2023_06_03 from '../Events/panino_2023.06.03';
 import Panino_2024_08_09 from '../Events/panino.2024-08-09.js';
+import Panino_2025_11_06 from '../Events/panino.2025-11-06.js';
 import Pavlovsk from '../Events/pavlovsk.js';
 import Pavlovsk_2024_05_07 from '../Events/pavlovsk.2024-05-07.js';
 import Pavlovsk_2025_04_30 from '../Events/pavlovsk.2025.04.30.js';
@@ -72,13 +78,17 @@ const Content = () => {
         <Route path='/events/anna-30-12-22' component={ CommonPage(Anna_30_12_22) } />
         <Route path='/events/anna-2024-03-12' component={ CommonPage(Anna_2024_03_12) } />
         <Route path='/events/anna-2024-12-05' component={ CommonPage(Anna_2024_12_05) } />
+        <Route path='/events/anna-2025-12-11' component={ CommonPage(Anna_2025_12_11) } />
         <Route path='/events/bobrov' component={ CommonPage(BobrovAlbum) } />
         <Route path='/events/bobrov-02-11' component={ CommonPage(BobrovAlbum_02_11) } />
         <Route path='/events/bobrov-2024-02-07' component={ CommonPage(Bobrov_2024_02_07) } />        
         <Route path='/events/buturlinovka' component={ CommonPage(ButurlinovkaAlbum) } />
+        <Route path='/events/buturlinovka-2025-07-02' component={ CommonPage(Buturlinovka_2025_07_02) } />
         <Route path='/events/concert-28-05' component={ CommonPage(Concert01Album) } />
         <Route path='/events/ded-moroz-2024-12-27' component={ CommonPage(DedMoroz_2024_12_27) } />
+        <Route path='/events/event-2025-12-30' component={ CommonPage(Events_2025_12_30) } />
         <Route path='/events/gribanovka-2023-08-02' component={ CommonPage(Gribanovka_2023_08_02) } />
+        <Route path='/events/hohol-2025-08-05' component={ CommonPage(Hohol_2025_08_05) } />
         <Route path='/events/kantemirovka' component={ CommonPage(Kantemirovka) } />
         <Route path='/events/kantemirovka-2023-11-02' component={ CommonPage(Kantemirovka_2023_11_02) } />
         <Route path='/events/kantemirovka-2024-06-03' component={ CommonPage(Kantemirovka_2024_06_03) } />
@@ -88,6 +98,7 @@ const Content = () => {
         <Route path='/events/nizhnedevitsk-2025-05-03' component={ CommonPage(Nizhnedevitsk_2025_05_03) } />
         <Route path='/events/novaya-usman-2023-10-06' component={ CommonPage(NovayaUsman_2023_10_06) } />
         <Route path='/events/novaya-usman-2024-10-09' component={ CommonPage(NovayaUsman_2024_10_09) } />
+        <Route path='/events/novaya-usman-2025-09-09' component={ CommonPage(NovayaUsman_2025_09_09) } />
         <Route path='/events/novoosinovka-2024-01-10' component={ CommonPage(Novoosinovka_2024_01_10) } />
         <Route path='/events/ostrogozhsk' component={ CommonPage(Ostrogozhsk) } />
         <Route path='/events/ostrogozhsk-2023-06-09' component={ CommonPage(Ostrogozhsk_09_06_23) } />
@@ -99,6 +110,7 @@ const Content = () => {
         <Route path='/events/panino' component={ CommonPage(Panino) } />
         <Route path='/events/panino-2023-06-03' component={ CommonPage(Panino_2023_06_03) } />
         <Route path='/events/panino-2024-08-09' component={ CommonPage(Panino_2024_08_09) } />
+        <Route path='/events/panino-2025-11-06' component={ CommonPage(Panino_2025_11_06) } />
         <Route path='/events/pavlovsk' component={ CommonPage(Pavlovsk) } />
         <Route path='/events/pavlovsk-04-23' component={ CommonPage(Pavlovsk_04_23) } />
         <Route path='/events/pavlovsk-2024-05-07' component={ CommonPage(Pavlovsk_2024_05_07) } />

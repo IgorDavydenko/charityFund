@@ -12,6 +12,120 @@ const Events = () => {
       <section className="event">
         <div className="event__img"
           style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/events/2025-12-30/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Мероприятия "Если б я был Дед Мороз" и "Волшебный Новый год"
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/event-2025-12-30">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+      
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/anna/2025-12-11/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            «Предновогодний марафон добра!» для Аннинской специальной общеобразовательной школы
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/anna-2025-12-11">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+      
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/panino/2025-11-06/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            «Детский день-каждый день!» для Панинского социально-реабилитационного центра для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/panino-2025-11-06">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+      
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/novaya_usman/2025-09-09/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Новоусманская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/novaya-usman-2025-09-09">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/hohol/2025-08-05/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Хохольский социально-реабилитационный центр для несовершеннолетних
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/hohol-2025-08-05">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/buturlinovka/2025-07-02/01.jpeg'})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '50% 50%',
+            backgroundSize: 'auto 100%',
+          }}></div>
+        <div className="event__description">
+          <h3 className="event__title">
+            Бутурлиновская школа-интернат для обучающихся с ограниченными возможностями здоровья
+          </h3>
+        </div>
+        <NavLink className="event__show-more"
+          to="/events/buturlinovka-2025-07-02">
+          <span>подробнее</span>
+        </NavLink>
+      </section>
+
+      <section className="event">
+        <div className="event__img"
+          style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/albums/nizhnedivitsk/2025-05-03/01.jpeg'})`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50% 50%',

@@ -1,10 +1,21 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const Rudny0612Album = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/rudny_06.12/01.jpg",
+      "/img/albums/rudny_06.12/02.jpg",
+      "/img/albums/rudny_06.12/03.jpg",
+      "/img/albums/rudny_06.12/04.jpg",
+      "/img/albums/rudny_06.12/05.jpg",
+      "/img/albums/rudny_06.12/06.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,29 +31,18 @@ const Rudny0612Album = () => {
           <br/>Мы признательны Вам за вашу доброту и искреннее волнение! ❤️
           </p>
         </div>
-        <SRLWrapper>
-          <div className="album__photos">
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
             <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/01.jpg'/>
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
             </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/05.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny_06.12/06.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+          ))}
+        </PhotoProvider>
       </div>
+    </div>
   )
 }
 

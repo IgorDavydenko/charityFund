@@ -1,11 +1,24 @@
 
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
 
 import './Events.scss'
 
-const nizhneditsk = () => {
+const nizhnedevitsk = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/nizhnedivitsk/2025-05-03/01.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/02.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/03.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/04.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/05.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/06.jpeg",
+      "/img/albums/nizhnedivitsk/2025-05-03/07.jpeg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -21,33 +34,21 @@ const nizhneditsk = () => {
         <br/>Вместе мы сможем сделать этот мир лучше! Благодарим за подаренные положительные эмоции, улыбки на счастливых лицах и искреннюю радость в сердцах детей!
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/01.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/02.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/03.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/04.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/05.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/06.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/nizhnedivitsk/2025-05-03/07.jpeg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+
     </div>
   )
 }
 
-export default rudny
+export default nizhnedevitsk

@@ -1,10 +1,23 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const BobrovAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/bobrov_02.11/01.jpg",
+      "/img/albums/bobrov_02.11/02.jpg",
+      "/img/albums/bobrov_02.11/03.jpg",
+      "/img/albums/bobrov_02.11/04.jpg",
+      "/img/albums/bobrov_02.11/05.jpg",
+      "/img/albums/bobrov_02.11/06.jpg",
+      "/img/albums/bobrov_02.11/07.jpg",
+      "/img/albums/bobrov_02.11/08.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -14,41 +27,25 @@ const BobrovAlbum = () => {
         <div className="">назад к событиям</div>
       </NavLink>
       <div className="album__description">
-          <p>
-          2 ноября АНО ПСД "От сердца к сердцу" провели благотворительную акцию "Радость добрых дел!" для КОУ ВО "Бобровской школы-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья".
-          <br/>Мир держится на неравнодушных, отзывчивых людях, не способных пройти мимо, всегда готовых помочь и оказать поддержку.
-          <br/>Спасибо за оказанное нам доверие, заботу и участие.🙏 Ваша помощь чрезвычайно ценна и никогда не будет забыта.❤️
-          </p>
-        </div>
-        <SRLWrapper>
-          <div className="album__photos">
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/01.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/05.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/06.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/07.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov_02.11/08.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+        <p>
+        2 ноября АНО ПСД "От сердца к сердцу" провели благотворительную акцию "Радость добрых дел!" для КОУ ВО "Бобровской школы-интернат для детей-сирот и детей, оставшихся без попечения родителей, с ограниченными возможностями здоровья".
+        <br/>Мир держится на неравнодушных, отзывчивых людях, не способных пройти мимо, всегда готовых помочь и оказать поддержку.
+        <br/>Спасибо за оказанное нам доверие, заботу и участие.🙏 Ваша помощь чрезвычайно ценна и никогда не будет забыта.❤️
+        </p>
       </div>
+
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+    </div>
   )
 }
 

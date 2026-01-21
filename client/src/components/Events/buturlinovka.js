@@ -1,10 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 import './Events.scss'
 
 const Album = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/buturlinovka/buturlinovka_01.jpg",
+      "/img/albums/buturlinovka/buturlinovka_02.jpg",
+      "/img/albums/buturlinovka/buturlinovka_03.jpg",
+      "/img/albums/buturlinovka/buturlinovka_04.jpg",
+      "/img/albums/buturlinovka/buturlinovka_05.jpg",
+      "/img/albums/buturlinovka/buturlinovka_06.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,28 +31,17 @@ const Album = () => {
           Будьте здоровы и счастливы😃
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/buturlinovka/buturlinovka_06.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

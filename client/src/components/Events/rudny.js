@@ -1,10 +1,21 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const RudnyAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/rudny/rudny_01.jpg",
+      "/img/albums/rudny/rudny_02.jpg",
+      "/img/albums/rudny/rudny_03.jpg",
+      "/img/albums/rudny/rudny_04.jpg",
+      "/img/albums/rudny/rudny_05.jpg",
+      "/img/albums/rudny/rudny_06.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -14,35 +25,24 @@ const RudnyAlbum = () => {
         <div className="">назад к событиям</div>
       </NavLink>
       <div className="album__description">
-          <p>
-            29 декабря АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Новогодний фейерверк» для Руднянской школы-интернат для обучающихся с ограниченными возможностями здоровья.
-            <br/>Помимо нужд школы каждому ребёнку подарили сладкий подарок, и не один! Благодарим всех кто принимал участие, и надеемся на дальнейшее сотрудничество!
-            <br/>Поздравляем всех с новым годом! И желаем всего самого наилучшего!
-          </p>
-        </div>
-        <SRLWrapper>
-          <div className="album__photos">
-            <div className="photo__item">
-              <img src='/img/albums/rudny/rudny_01.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny/rudny_02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny/rudny_03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny/rudny_04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/rudny/rudny_05.jpg'/>
-            </div>
-            <div className="photo__item">
-            <img src='/img/albums/rudny/rudny_06.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+        <p>
+          29 декабря АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Новогодний фейерверк» для Руднянской школы-интернат для обучающихся с ограниченными возможностями здоровья.
+          <br/>Помимо нужд школы каждому ребёнку подарили сладкий подарок, и не один! Благодарим всех кто принимал участие, и надеемся на дальнейшее сотрудничество!
+          <br/>Поздравляем всех с новым годом! И желаем всего самого наилучшего!
+        </p>
       </div>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+    </div>
   )
 }
 

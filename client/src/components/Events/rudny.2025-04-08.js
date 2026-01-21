@@ -1,10 +1,23 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const rudny = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/rudny/2025-04-08/01.jpeg",
+      "/img/albums/rudny/2025-04-08/02.jpeg",
+      "/img/albums/rudny/2025-04-08/03.jpeg",
+      "/img/albums/rudny/2025-04-08/04.jpeg",
+      "/img/albums/rudny/2025-04-08/05.jpeg",
+      "/img/albums/rudny/2025-04-08/06.jpeg",
+      "/img/albums/rudny/2025-04-08/07.jpeg",
+      "/img/albums/rudny/2025-04-08/08.jpeg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -22,34 +35,17 @@ const rudny = () => {
         <br/>Спасибо!🤗
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/01.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/02.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/03.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/04.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/05.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/06.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/07.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2025-04-08/08.jpeg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

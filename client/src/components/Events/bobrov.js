@@ -1,10 +1,22 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const BobrovAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/bobrov/bobrov_01.jpg",
+      "/img/albums/bobrov/bobrov_02.jpg",
+      "/img/albums/bobrov/bobrov_03.jpg",
+      "/img/albums/bobrov/bobrov_04.jpg",
+      "/img/albums/bobrov/bobrov_05.jpg",
+      "/img/albums/bobrov/bobrov_06.jpg",
+      "/img/albums/bobrov/bobrov_07.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -14,38 +26,24 @@ const BobrovAlbum = () => {
         <div className="">назад к событиям</div>
       </NavLink>
       <div className="album__description">
-          <p>
-            29 октября 2021 г. АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Бумеранг добра» для Бобровской школы для детей сирот и детей,  оставшихся без попечения родителей, с ограниченными возможностями здоровья.<br/>
-            Выражаем огромную благодарность всем партнёрам, каждому человеку кто принимал участие в это не простое время! К сожалению всех ребятишек, нам не удалось увидеть. Но благотворительный груз мы смогли передать.<br/>
-            Делай добро по всюду, где ты проходишь, спустя некоторое время это добро вернётся к тебе. (Библия ЕКЛ 11:1)
-          </p>
-        </div>
-        <SRLWrapper>
-          <div className="album__photos">
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_01.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_02.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_03.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_04.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_05.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_06.jpg'/>
-            </div>
-            <div className="photo__item">
-              <img src='/img/albums/bobrov/bobrov_07.jpg'/>
-            </div>
-          </div>
-        </SRLWrapper>
+        <p>
+          29 октября 2021 г. АНО ПСД «От сердца к сердцу» провели благотворительную акцию «Бумеранг добра» для Бобровской школы для детей сирот и детей,  оставшихся без попечения родителей, с ограниченными возможностями здоровья.<br/>
+          Выражаем огромную благодарность всем партнёрам, каждому человеку кто принимал участие в это не простое время! К сожалению всех ребятишек, нам не удалось увидеть. Но благотворительный груз мы смогли передать.<br/>
+          Делай добро по всюду, где ты проходишь, спустя некоторое время это добро вернётся к тебе. (Библия ЕКЛ 11:1)
+        </p>
       </div>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+    </div>
   )
 }
 

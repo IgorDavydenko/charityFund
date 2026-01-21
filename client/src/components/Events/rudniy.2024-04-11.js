@@ -1,10 +1,22 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const Album = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/rudny/2024-04-11/01.jpg",
+      "/img/albums/rudny/2024-04-11/02.jpg",
+      "/img/albums/rudny/2024-04-11/03.jpg",
+      "/img/albums/rudny/2024-04-11/04.jpg",
+      "/img/albums/rudny/2024-04-11/05.jpg",
+      "/img/albums/rudny/2024-04-11/06.jpg",
+      "/img/albums/rudny/2024-04-11/07.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -22,31 +34,17 @@ const Album = () => {
           <br/>Гармонии Вам и счастья! ☺🙏🙏🙏
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/rudny/2024-04-11/07.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

@@ -1,10 +1,23 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox"
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom'
 
 import './Events.scss'
 
 const Panino = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/panino/panino_01.jpg",
+      "/img/albums/panino/panino_02.jpg",
+      "/img/albums/panino/panino_03.jpg",
+      "/img/albums/panino/panino_04.jpg",
+      "/img/albums/panino/panino_05.jpg",
+      "/img/albums/panino/panino_06.jpg",
+      "/img/albums/panino/panino_07.jpg",
+      "/img/albums/panino/panino_08.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,34 +33,17 @@ const Panino = () => {
           Ваша помощь и неравнодушное отношение заслуживает самого глубокого признания и ещё раз доказывает что мир не без добрых людей, и есть такое понятие, как благотворительность, наполненное живым смыслом: "Творить благо".
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_07.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/panino/panino_08.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

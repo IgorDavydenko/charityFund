@@ -1,10 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 import './Events.scss'
 
 const AnnaAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/anna/01/01.jpg",
+      "/img/albums/anna/01/02.jpg",
+      "/img/albums/anna/01/03.jpg",
+      "/img/albums/anna/01/04.jpg",
+      "/img/albums/anna/01/05.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -19,25 +29,19 @@ const AnnaAlbum = () => {
           «Благотворительная душа будет насыщена, кто напояет других, тот и сам напоен будет» Пр.: 11:25
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/01/anna_05.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+
       <video className="album__video" controls>
         <source src="/video/anna.mp4" type="video/mp4"></source>
       </video>

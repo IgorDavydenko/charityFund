@@ -1,11 +1,26 @@
 
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const DedMoroz = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/ded-moroz/2024-12-27/01.jpg",
+      "/img/albums/ded-moroz/2024-12-27/02.jpg",
+      "/img/albums/ded-moroz/2024-12-27/03.jpg",
+      "/img/albums/ded-moroz/2024-12-27/04.jpg",
+      "/img/albums/ded-moroz/2024-12-27/05.jpg",
+      "/img/albums/ded-moroz/2024-12-27/06.jpg",
+      "/img/albums/ded-moroz/2024-12-27/07.jpg",
+      "/img/albums/ded-moroz/2024-12-27/08.jpg",
+      "/img/albums/ded-moroz/2024-12-27/09.jpg",
+      "/img/albums/ded-moroz/2024-12-27/10.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -24,40 +39,17 @@ const DedMoroz = () => {
         <br/>С Новым 2025 годом и Рождеством!🙏🎄🎈
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/07.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/08.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/09.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/ded-moroz/2024-12-27/10.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

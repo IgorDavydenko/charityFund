@@ -1,10 +1,24 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox"
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom'
 
 import './Events.scss'
 
 const Lisky = () => {
+  
+  const data = {
+    "photos": [
+      "/img/albums/lisky/lisky_.jpg",
+      "/img/albums/lisky/lisky_02.jpg",
+      "/img/albums/lisky/lisky_03.jpg",
+      "/img/albums/lisky/lisky_04.jpg",
+      "/img/albums/lisky/lisky_05.jpg",
+      "/img/albums/lisky/lisky_06.jpg",
+      "/img/albums/lisky/lisky_07.jpg",
+      "/img/albums/lisky/lisky_08.jpg",
+      "/img/albums/lisky/lisky_09.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,37 +34,17 @@ const Lisky = () => {
         <br/>Благодарим Вас за отзывчивость и открытое сердце!❤️
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_07.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_08.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/lisky/lisky_09.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

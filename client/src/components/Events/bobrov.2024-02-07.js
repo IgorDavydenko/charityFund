@@ -1,10 +1,22 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const BobrovAlbum = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/bobrov/2024-02-07/01.jpg",
+      "/img/albums/bobrov/2024-02-07/02.jpg",
+      "/img/albums/bobrov/2024-02-07/03.jpg",
+      "/img/albums/bobrov/2024-02-07/04.jpg",
+      "/img/albums/bobrov/2024-02-07/05.jpg",
+      "/img/albums/bobrov/2024-02-07/06.jpg",
+      "/img/albums/bobrov/2024-02-07/07.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,31 +32,19 @@ const BobrovAlbum = () => {
           <br/>Спасибо за оказанное доверие, участие. 🙏 Ваша помощь чрезвычайно ценна и никогда не будет забыта!☺
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/bobrov/2024-02-07/07.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+      
     </div>
   )
 }

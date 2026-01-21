@@ -1,10 +1,20 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { NavLink } from 'react-router-dom';
 
 import './Events.scss'
 
 const kantemirovka = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/kantemirovka/2025-03-06/01.jpeg",
+      "/img/albums/kantemirovka/2025-03-06/02.jpeg",
+      "/img/albums/kantemirovka/2025-03-06/03.jpeg",
+      "/img/albums/kantemirovka/2025-03-06/04.jpeg",
+      "/img/albums/kantemirovka/2025-03-06/05.jpeg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -21,25 +31,17 @@ const kantemirovka = () => {
           <br/>Спасибо, что не проходите мимо бед и неприятностей других людей.🙏
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/kantemirovka/2025-03-06/01.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/kantemirovka/2025-03-06/02.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/kantemirovka/2025-03-06/03.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/kantemirovka/2025-03-06/04.jpeg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/kantemirovka/2025-03-06/05.jpeg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

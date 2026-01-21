@@ -1,10 +1,26 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { SRLWrapper } from "simple-react-lightbox";
-
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import './Events.scss'
 
 const AnnaAlbum = () => {
+
+  const data = {
+    "description": "03 мая 2025 г. АНО ПСД \"От сердца к сердцу\" провели благотворительную акцию «Этот мир мы дарим детям!» приуроченную к Международному дню защиты детей для КУ ВО «Нижнедевицкого социально-реабилитационного центра для несовершеннолетних».<br>Особую признательность вызывает ваша готовность делиться не только материальными ресурсами, но и своим временем, энергией!<br>Вместе мы сможем сделать этот мир лучше! Благодарим за подаренные положительные эмоции, улыбки на счастливых лицах и искреннюю радость в сердцах детей!",
+    "photos": [
+      "/img/albums/anna/30.12.22/01.jpg",
+      "/img/albums/anna/30.12.22/02.jpg",
+      "/img/albums/anna/30.12.22/03.jpg",
+      "/img/albums/anna/30.12.22/04.jpg",
+      "/img/albums/anna/30.12.22/05.jpg",
+      "/img/albums/anna/30.12.22/06.jpg",
+      "/img/albums/anna/30.12.22/07.jpg",
+      "/img/albums/anna/30.12.22/08.jpg",
+      "/img/albums/anna/30.12.22/09.jpg",
+      "/img/albums/anna/30.12.22/10.jpg",
+    ]
+  };
 
   return (
     <div className="album">
@@ -20,40 +36,18 @@ const AnnaAlbum = () => {
         <br/>Желаем невероятной удачи, блестящих побед, выгодных предложений, полезных идей, благополучной деятельности, высоких доходов, крепкого здоровья, оптимистичного настроения, великого счастья и семейного благополучия! и надеемся на дальнейшее сотрудничество!🙏
         </p>
       </div>
-      <SRLWrapper>
-        <div className="album__photos">
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/01.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/02.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/03.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/04.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/05.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/06.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/07.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/08.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/09.jpg'/>
-          </div>
-          <div className="photo__item">
-            <img src='/img/albums/anna/30.12.22/10.jpg'/>
-          </div>
-        </div>
-      </SRLWrapper>
+
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { SRLWrapper } from "simple-react-lightbox";
 
 import './Events.scss'
 
@@ -14,7 +13,7 @@ const Album = () => {
           Пусть отданное детям сегодня вернётся к вам завтра многократно приумноженным!
         </p>
       </div>
-      <SRLWrapper>
+      {/* <SRLWrapper>
         <div className="album__preview">
           <div className="preview__img">
             <img src='/img/albums/zemlyansk/zemlyansk_01.jpg'/>
@@ -47,7 +46,7 @@ const Album = () => {
             <img src='/img/albums/zemlyansk/zemlyansk_10.jpg'/>
           </div>
         </div>
-      </SRLWrapper>
+      </SRLWrapper> */}
     </div>
   )
 }

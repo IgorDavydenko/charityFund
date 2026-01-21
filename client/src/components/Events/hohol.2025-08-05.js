@@ -1,0 +1,51 @@
+import React from 'react'
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { NavLink } from 'react-router-dom';
+
+import './Events.scss'
+
+const Album = () => {
+
+  const data = {
+    "photos": [
+      "/img/albums/hohol/2025-08-05/01.jpeg",
+      "/img/albums/hohol/2025-08-05/02.jpeg",
+      "/img/albums/hohol/2025-08-05/03.jpeg",
+      "/img/albums/hohol/2025-08-05/04.jpeg",
+      "/img/albums/hohol/2025-08-05/05.jpeg",
+      "/img/albums/hohol/2025-08-05/06.jpeg",
+      "/img/albums/hohol/2025-08-05/07.jpeg",
+      "/img/albums/hohol/2025-08-05/08.jpeg",
+    ]
+  };
+
+  return (
+    <div className="album">
+      <NavLink className="album__back"
+        to="/events">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 219.151 219.151"><path d="M109.576,219.151c60.419,0,109.573-49.156,109.573-109.576C219.149,49.156,169.995,0,109.576,0S0.002,49.156,0.002,109.575 C0.002,169.995,49.157,219.151,109.576,219.151z M109.576,15c52.148,0,94.573,42.426,94.574,94.575 c0,52.149-42.425,94.575-94.574,94.576c-52.148-0.001-94.573-42.427-94.573-94.577C15.003,57.427,57.428,15,109.576,15z"/><path d="M94.861,156.507c2.929,2.928,7.678,2.927,10.606,0c2.93-2.93,2.93-7.678-0.001-10.608l-28.82-28.819l83.457-0.008 c4.142-0.001,7.499-3.358,7.499-7.502c-0.001-4.142-3.358-7.498-7.5-7.498l-83.46,0.008l28.827-28.825 c2.929-2.929,2.929-7.679,0-10.607c-1.465-1.464-3.384-2.197-5.304-2.197c-1.919,0-3.838,0.733-5.303,2.196l-41.629,41.628 c-1.407,1.406-2.197,3.313-2.197,5.303c0.001,1.99,0.791,3.896,2.198,5.305L94.861,156.507z"/></svg>
+        <div className="">назад к событиям</div>
+      </NavLink>
+      <div className="album__description">
+        <p>
+          5 августа 2025 г. АНО ПСД "От сердца к сердцу" провели благотворительную акцию «Мир глазами детей!» для КУ ВО «Хохольского социально-реабилитационного центра для несовершеннолетних».
+          <br/>Невозможно выразить словами, насколько мы ценим вашу помощь и участие. Вы-настоящий пример доброты и милосердия.
+          <br/>Спасибо за вашу заботу и участие. Ваша помощь делает жизнь детей лучше и светлее!🤗🤗
+        </p>
+      </div>
+      <div className="album__photos">
+        <PhotoProvider>
+          {data.photos.map((path) => (
+            <div className="photo__item">
+              <PhotoView src={path}>
+                <img src={path} style={{ objectFit: 'cover' }} alt="" />
+              </PhotoView>
+            </div>
+          ))}
+        </PhotoProvider>
+      </div>
+    </div>
+  )
+}
+
+export default Album
